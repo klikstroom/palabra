@@ -196,3 +196,25 @@ h2 { font-size: 18px; margin: 28px 0 10px; }
 .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: flex-end; justify-content: center; z-index: 10; }
 .sheet { background: var(--bg); width: 100%; max-width: 560px; border-radius: 22px 22px 0 0; padding: 20px 16px calc(env(safe-area-inset-bottom) + 20px); max-height: 85dvh; overflow: auto; }
 .sheet .card { text-align: center; }
+
+/* v2 */
+.pair { display: grid; grid-template-columns: 1fr 2fr; gap: 10px; }
+.pair .btn + .btn { margin-top: 0; }
+.s-top .undo { margin-left: 0; font-size: 22px; }
+.speak.big { width: 96px; height: 96px; font-size: 40px; margin-top: 8px; }
+.linkcard { display: block; width: 100%; text-align: left; cursor: pointer; }
+.checkgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+.checkitem { display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 10px 12px; border-radius: 12px; background: var(--surface); border: 1.5px solid var(--line); min-height: 58px; }
+.checkitem .es { font-weight: 650; }
+.checkitem .nl { font-size: 13px; color: var(--muted); }
+.checkitem.on { border-color: var(--good); background: var(--ok-bg); }
+.checkitem.on .es::after { content: " ✓"; color: var(--good); }
+.chart { width: 100%; height: auto; display: block; margin-top: 4px; }
+.chart .axis { font-size: 10px; fill: var(--muted); }
+.chart .base { stroke: var(--line); stroke-width: 1; }
+.chart g:hover path { opacity: .8; }
+.tipline { min-height: 20px; margin-top: 2px; }
+.stack { display: flex; gap: 2px; height: 14px; border-radius: 7px; overflow: hidden; margin: 6px 0 10px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.tabs button { max-width: 120px; }

@@ -493,4 +493,562 @@ la clase|de les; de klas|zn|Tengo *clase* de español.|Ik heb Spaanse les.|dagel
 el ordenador|de computer|zn|Trabajo con el *ordenador*.|Ik werk met de computer.|dagelijks|Lat.-Am.: la computadora
 el mensaje|het bericht|zn|Te he mandado un *mensaje*.|Ik heb je een bericht gestuurd.|dagelijks|
 la contraseña|het wachtwoord|zn|¿Cuál es la *contraseña* del wifi?|Wat is het wifi-wachtwoord?|reizen|
+# --- Deel 2: richting A2/B1 ---
+fui|ik ging; ik was (verleden tijd van ir/ser)|ww|Ayer *fui* al cine.|Gisteren ging ik naar de bioscoop.|verleden|fui · fuiste · fue · fuimos · fuisteis · fueron (ir én ser)
+fue|het was; hij/zij ging|ww|*Fue* un día increíble.|Het was een ongelooflijke dag.|verleden|
+estuve|ik was (ergens, tijdelijk)|ww|*Estuve* en Lisboa en mayo.|Ik was in mei in Lissabon.|verleden|estuve · estuviste · estuvo · estuvimos · estuvieron
+tuve|ik had|ww|*Tuve* un problema con el coche.|Ik had een probleem met de auto.|verleden|tuve · tuviste · tuvo · tuvimos · tuvieron
+hice|ik deed, ik maakte|ww|*Hice* muchas fotos.|Ik heb veel foto's gemaakt.|verleden|hice · hiciste · hizo · hicimos · hicieron
+dije|ik zei|ww|Ya te lo *dije*.|Ik heb het je al gezegd.|verleden|dije · dijiste · dijo · dijimos · dijeron
+pude|ik kon|ww|No *pude* dormir.|Ik kon niet slapen.|verleden|pude · pudiste · pudo · pudimos · pudieron
+vi|ik zag|ww|*Vi* una película muy buena.|Ik zag een heel goede film.|verleden|vi · viste · vio · vimos · vieron
+vine|ik kwam|ww|*Vine* a España hace dos años.|Ik kwam twee jaar geleden naar Spanje.|verleden|vine · viniste · vino · vinimos · vinieron
+hablé|ik sprak|ww|*Hablé* con ella ayer.|Ik heb gisteren met haar gesproken.|verleden|regelmatig -ar: hablé · hablaste · habló · hablamos · hablaron
+comí|ik at|ww|*Comí* paella en Valencia.|Ik at paella in Valencia.|verleden|regelmatig -er/-ir: comí · comiste · comió · comimos · comieron
+era|het was; ik/hij was (beschrijving vroeger)|ww|La casa *era* muy grande.|Het huis was heel groot.|verleden|era · eras · era · éramos · erais · eran (imperfecto)
+había|er was, er waren|ww|*Había* mucha gente.|Er waren veel mensen.|verleden|
+estaba|ik was; het was (toestand vroeger)|ww|*Estaba* muy cansado.|Ik was heel moe.|verleden|estaba · estabas · estaba · estábamos · estaban
+tenía|ik had (vroeger, beschrijving)|ww|Cuando *tenía* diez años, vivía en Leiden.|Toen ik tien was, woonde ik in Leiden.|verleden|regelmatig imperfecto -er: tenía · tenías · tenía · teníamos · tenían
+he|ik heb (hulpwerkwoord)|ww|*He* comido demasiado.|Ik heb te veel gegeten.|verleden|he · has · ha · hemos · habéis · han + voltooid deelwoord
+hace … (tiempo)|… geleden|uitdr|Llegué *hace* tres días.|Ik ben drie dagen geleden aangekomen.|tijd|hace un año = een jaar geleden
+acabar de|net (iets gedaan hebben)|uitdr|*Acabo de* llegar.|Ik ben net aangekomen.|tijd|acabo de + infinitief
+volver a|opnieuw (iets doen)|uitdr|Quiero *volver a* Sevilla.|Ik wil terug naar Sevilla. / Ik wil weer naar Sevilla.|tijd|volver a + infinitief = iets opnieuw doen
+soler|plegen, gewoonlijk doen|ww|*Suelo* cenar a las nueve.|Ik eet meestal om negen uur.|tijd|suelo · sueles · suele · solemos · suelen + infinitief
+estar + -ando|bezig zijn met|uitdr|*Estoy* aprendiendo español.|Ik ben Spaans aan het leren.|basis|hablar → hablando · comer → comiendo · vivir → viviendo
+tener ganas de|zin hebben in|uitdr|*Tengo ganas de* ir a la playa.|Ik heb zin om naar het strand te gaan.|sociaal|
+me da igual|het maakt me niet uit|uitdr|¿Pizza o pasta? *Me da igual*.|Pizza of pasta? Het maakt me niet uit.|sociaal|
+¡qué pena!|wat jammer!|uitdr|¿No puedes venir? *¡Qué pena!*|Kun je niet komen? Wat jammer!|sociaal|ook: ¡qué lástima!
+¿en serio?|echt?, meen je dat?|uitdr|*¿En serio?* ¡No me lo creo!|Echt? Ik geloof het niet!|sociaal|
+no me digas|nee, echt?; je meent het|uitdr|—Me caso. —¡*No me digas*!|—Ik ga trouwen. —Nee, echt?!|sociaal|
+vale la pena|het is de moeite waard|uitdr|*Vale la pena* visitar Toledo.|Het is de moeite waard om Toledo te bezoeken.|sociaal|
+echar de menos|missen (iemand/iets)|uitdr|*Echo de menos* a mi familia.|Ik mis mijn familie.|gevoel|Lat.-Am.: extrañar
+tener razón|gelijk hebben|uitdr|*Tienes razón*.|Je hebt gelijk.|sociaal|
+darse cuenta|beseffen, merken|uitdr|No *me di cuenta*.|Ik had het niet door.|basis|me doy cuenta = ik besef het
+tener miedo|bang zijn|uitdr|*Tengo miedo* de los perros.|Ik ben bang voor honden.|gevoel|tener miedo de/a
+tener prisa|haast hebben|uitdr|Lo siento, *tengo prisa*.|Sorry, ik heb haast.|tijd|
+tener sueño|slaap hebben|uitdr|Ya *tengo sueño*.|Ik heb al slaap.|gevoel|
+tener sed|dorst hebben|uitdr|*Tengo sed*, ¿hay agua?|Ik heb dorst, is er water?|eten|
+tener calor|het warm hebben|uitdr|*Tengo calor*.|Ik heb het warm.|gevoel|tener frío = het koud hebben
+¿me puedes …?|kun je … voor me?|uitdr|*¿Me puedes* ayudar con esto?|Kun je me hiermee helpen?|sociaal|beleefder: ¿me podría …?
+¿podría …?|zou u … kunnen?|uitdr|*¿Podría* hablar más despacio?|Zou u langzamer kunnen praten?|sociaal|voorwaardelijke wijs: beleefd
+quisiera|ik zou graag willen|uitdr|*Quisiera* una habitación doble.|Ik zou graag een tweepersoonskamer willen.|reizen|beleefde vorm van quiero
+a lo mejor|misschien|uitdr|*A lo mejor* voy mañana.|Misschien ga ik morgen.|basis|met gewone tegenwoordige tijd
+quizás|misschien|bw|*Quizás* tengas razón.|Misschien heb je gelijk.|basis|ook: quizá, tal vez (vaak + subjuntivo)
+ojalá|hopelijk, was het maar zo|uitdr|*¡Ojalá* haga sol mañana!|Hopelijk schijnt morgen de zon!|basis|uit het Arabisch · + subjuntivo
+sin embargo|echter, toch|vw|Es caro; *sin embargo*, merece la pena.|Het is duur; toch is het de moeite waard.|basis|
+además|bovendien|bw|Es barato y *además* está cerca.|Het is goedkoop en bovendien is het dichtbij.|basis|
+por eso|daarom|uitdr|Llueve, *por eso* me quedo en casa.|Het regent, daarom blijf ik thuis.|basis|
+o sea|dus, met andere woorden|uitdr|Llego a las diez, *o sea*, tarde.|Ik kom om tien uur, dus laat.|basis|heel veel gebruikt in spreektaal
+es decir|dat wil zeggen|uitdr|Mañana, *es decir*, el sábado.|Morgen, dat wil zeggen zaterdag.|basis|
+por ejemplo|bijvoorbeeld|uitdr|Me gusta la fruta, *por ejemplo* las fresas.|Ik hou van fruit, bijvoorbeeld aardbeien.|basis|
+de hecho|in feite, sterker nog|uitdr|*De hecho*, nunca he estado allí.|Sterker nog, ik ben er nooit geweest.|basis|
+en cambio|daarentegen|uitdr|Yo soy alto; mi hermano, *en cambio*, es bajo.|Ik ben lang; mijn broer daarentegen is klein.|basis|
+por lo menos|tenminste|uitdr|*Por lo menos* no llueve.|Het regent tenminste niet.|basis|ook: al menos
+por supuesto|natuurlijk, uiteraard|uitdr|*Por supuesto* que puedes venir.|Natuurlijk kun je komen.|sociaal|
+al final|uiteindelijk|uitdr|*Al final* no fuimos.|Uiteindelijk gingen we niet.|basis|
+de repente|plotseling|uitdr|*De repente* empezó a llover.|Plotseling begon het te regenen.|basis|
+por fin|eindelijk|uitdr|¡*Por fin* es viernes!|Eindelijk is het vrijdag!|basis|
+en realidad|eigenlijk|uitdr|*En realidad*, prefiero el té.|Eigenlijk heb ik liever thee.|basis|
+la verdad es que|eerlijk gezegd|uitdr|*La verdad es que* no lo sé.|Eerlijk gezegd weet ik het niet.|basis|
+bueno|nou, goed (stopwoord)|uitdr|*Bueno*, ¿nos vamos?|Nou, gaan we?|sociaal|
+oye|hé, zeg|uitdr|*Oye*, ¿tienes un momento?|Hé, heb je even?|sociaal|beleefd: oiga
+mira|kijk; luister eens|uitdr|*Mira*, es muy fácil.|Kijk, het is heel makkelijk.|sociaal|
+venga|kom op; oké dan|uitdr|¡*Venga*, vamos!|Kom op, we gaan!|sociaal|typisch Spanje
+¡qué guay!|wat gaaf!|uitdr|¿Vas a Ibiza? *¡Qué guay!*|Ga je naar Ibiza? Wat gaaf!|sociaal|Spanje · Mex.: ¡qué padre! · Arg.: ¡qué bueno!
+¡ánimo!|zet 'm op!, sterkte!|uitdr|*¡Ánimo!* Tú puedes.|Zet 'm op! Jij kunt het.|sociaal|
+¡enhorabuena!|gefeliciteerd! (prestatie)|uitdr|¡*Enhorabuena* por el trabajo nuevo!|Gefeliciteerd met je nieuwe baan!|sociaal|verjaardag: ¡felicidades! / ¡feliz cumpleaños!
+¡felicidades!|gefeliciteerd!|uitdr|¡*Felicidades*! ¿Cuántos años cumples?|Gefeliciteerd! Hoe oud word je?|sociaal|
+¡buen provecho!|eet smakelijk!|uitdr|*¡Buen provecho!*|Eet smakelijk!|eten|ook: ¡que aproveche!
+¡que lo pases bien!|veel plezier!|uitdr|*¡Que lo pases bien!*|Veel plezier!|sociaal|
+encantado|aangenaam (kennis te maken)|bn|*Encantado* de conocerte.|Leuk je te leren kennen.|sociaal|vrouw: encantada
+el cumpleaños|de verjaardag|zn|Hoy es mi *cumpleaños*.|Vandaag is mijn verjaardag.|sociaal|
+la boda|de bruiloft|zn|Vamos a una *boda* en Málaga.|We gaan naar een bruiloft in Málaga.|sociaal|casarse = trouwen
+el abuelo|de opa|zn|Mi *abuelo* tiene noventa años.|Mijn opa is negentig jaar.|sociaal|la abuela = oma
+el tío|de oom; gast (informeel)|zn|Mi *tío* vive en Chile.|Mijn oom woont in Chili.|sociaal|la tía = tante · informeel Spanje: tío = gast
+el primo|de neef (zoon van oom/tante)|zn|Mi *primo* es muy divertido.|Mijn neef is heel grappig.|sociaal|la prima = nicht
+el marido|de echtgenoot|zn|Mi *marido* es de Colombia.|Mijn man komt uit Colombia.|sociaal|la esposa / la mujer = de echtgenote
+la pareja|de partner; het stel|zn|Vivo con mi *pareja*.|Ik woon met mijn partner.|sociaal|
+el vecino|de buurman|zn|Mi *vecino* es muy simpático.|Mijn buurman is heel aardig.|sociaal|la vecina = buurvrouw
+el compañero|de collega; de huisgenoot|zn|Mi *compañero* de trabajo es de Bilbao.|Mijn collega komt uit Bilbao.|sociaal|compañero de piso = huisgenoot
+el jefe|de baas|zn|Mi *jefe* es muy exigente.|Mijn baas is erg veeleisend.|dagelijks|
+el cliente|de klant|zn|Tengo una reunión con un *cliente*.|Ik heb een afspraak met een klant.|dagelijks|
+la reunión|de vergadering, afspraak|zn|La *reunión* es a las diez.|De vergadering is om tien uur.|dagelijks|
+el proyecto|het project|zn|Estoy trabajando en un *proyecto* nuevo.|Ik werk aan een nieuw project.|dagelijks|
+el sueldo|het salaris|zn|El *sueldo* no está mal.|Het salaris is niet slecht.|dagelijks|
+la universidad|de universiteit|zn|Estudié en la *universidad* de Utrecht.|Ik heb aan de universiteit van Utrecht gestudeerd.|dagelijks|
+el profesor|de leraar|zn|Mi *profesor* de español es de México.|Mijn Spaanse leraar komt uit Mexico.|dagelijks|la profesora
+el estudiante|de student|zn|Soy *estudiante* de derecho.|Ik ben rechtenstudent.|dagelijks|
+el examen|het examen|zn|Mañana tengo un *examen*.|Morgen heb ik een examen.|dagelijks|meervoud: exámenes
+la historia|de geschiedenis; het verhaal|zn|Me encanta la *historia* de España.|Ik ben dol op de geschiedenis van Spanje.|vrije tijd|
+el deporte|de sport|zn|¿Haces algún *deporte*?|Doe je aan sport?|vrije tijd|
+el fútbol|het voetbal|zn|¿Te gusta el *fútbol*?|Hou je van voetbal?|vrije tijd|
+el partido|de wedstrijd; de partij|zn|¿Vemos el *partido* esta noche?|Kijken we vanavond de wedstrijd?|vrije tijd|
+el equipo|het team|zn|¿Cuál es tu *equipo* favorito?|Wat is je favoriete team?|vrije tijd|
+el gimnasio|de sportschool|zn|Voy al *gimnasio* tres veces por semana.|Ik ga drie keer per week naar de sportschool.|vrije tijd|
+la canción|het lied|zn|Esta *canción* me encanta.|Ik ben dol op dit liedje.|vrije tijd|
+el concierto|het concert|zn|Vamos a un *concierto* el sábado.|We gaan zaterdag naar een concert.|vrije tijd|
+la serie|de serie|zn|Estoy viendo una *serie* española.|Ik kijk een Spaanse serie.|vrije tijd|
+el juego|het spel|zn|Es un *juego* muy divertido.|Het is een heel leuk spel.|vrije tijd|
+el arte|de kunst|zn|Me interesa mucho el *arte* moderno.|Moderne kunst interesseert me erg.|vrije tijd|
+el paseo|de wandeling|zn|¿Damos un *paseo*?|Zullen we een wandeling maken?|vrije tijd|pasear = wandelen
+la excursión|de excursie, het uitstapje|zn|Hacemos una *excursión* a Montserrat.|We maken een uitstapje naar Montserrat.|reizen|
+el turista|de toerist|zn|Hay muchos *turistas* en verano.|Er zijn veel toeristen in de zomer.|reizen|la turista
+la oficina de turismo|het VVV-kantoor|uitdr|¿Dónde está *la oficina de turismo*?|Waar is het VVV-kantoor?|reizen|
+el monumento|het monument|zn|Es el *monumento* más famoso de la ciudad.|Het is het beroemdste monument van de stad.|reizen|
+la catedral|de kathedraal|zn|La *catedral* de Sevilla es enorme.|De kathedraal van Sevilla is enorm.|reizen|
+el castillo|het kasteel|zn|Visitamos un *castillo* medieval.|We bezoeken een middeleeuws kasteel.|reizen|
+el puente|de brug|zn|Cruzamos el *puente* a pie.|We steken de brug te voet over.|reizen|
+el barrio|de wijk|zn|Es un *barrio* muy animado.|Het is een heel levendige wijk.|reizen|
+la esquina|de hoek (straat)|zn|El bar está en la *esquina*.|Het café is op de hoek.|reizen|
+el semáforo|het stoplicht|zn|Gira a la derecha en el *semáforo*.|Sla rechtsaf bij het stoplicht.|reizen|
+la gasolinera|het tankstation|zn|¿Hay una *gasolinera* cerca?|Is er een tankstation in de buurt?|reizen|
+el aparcamiento|de parkeerplaats|zn|¿Hay *aparcamiento* en el hotel?|Heeft het hotel een parkeerplaats?|reizen|Lat.-Am.: el estacionamiento · aparcar = parkeren
+el barco|de boot|zn|Vamos a la isla en *barco*.|We gaan met de boot naar het eiland.|reizen|el ferry
+el andén|het perron|zn|El tren sale del *andén* tres.|De trein vertrekt van perron drie.|reizen|
+el retraso|de vertraging|zn|El vuelo tiene una hora de *retraso*.|De vlucht heeft een uur vertraging.|reizen|
+la salida|de uitgang; het vertrek|zn|¿Dónde está la *salida*?|Waar is de uitgang?|reizen|la llegada = de aankomst
+el horario|de dienstregeling; de openingstijden|zn|¿Cuál es el *horario* del museo?|Wat zijn de openingstijden van het museum?|reizen|
+la ida y vuelta|heen en terug, retour|uitdr|Un billete de *ida y vuelta*.|Een retourtje.|reizen|solo ida = enkele reis
+el equipaje|de bagage|zn|¿Puedo dejar el *equipaje* aquí?|Mag ik de bagage hier laten?|reizen|
+la mochila|de rugzak|zn|Viajo solo con una *mochila*.|Ik reis alleen met een rugzak.|reizen|
+la frontera|de grens|zn|Cruzamos la *frontera* con Portugal.|We steken de grens met Portugal over.|reizen|
+el extranjero|het buitenland; de buitenlander|zn|Trabajo en el *extranjero*.|Ik werk in het buitenland.|reizen|
+el alojamiento|het verblijf, de accommodatie|zn|Buscamos *alojamiento* barato.|We zoeken goedkoop verblijf.|reizen|
+la ducha|de douche|zn|La *ducha* no tiene agua caliente.|De douche heeft geen warm water.|reizen|ducharse = douchen
+la toalla|de handdoek|zn|¿Me puede dar otra *toalla*?|Kunt u me nog een handdoek geven?|reizen|
+el aire acondicionado|de airco|uitdr|El *aire acondicionado* no funciona.|De airco doet het niet.|reizen|
+funcionar|werken (apparaat)|ww|El wifi no *funciona*.|De wifi doet het niet.|reizen|
+la queja|de klacht|zn|Tengo una *queja* sobre la habitación.|Ik heb een klacht over de kamer.|reizen|quejarse = klagen
+el problema con|het probleem met|uitdr|Hay un *problema con* mi reserva.|Er is een probleem met mijn reservering.|reizen|
+el seguro|de verzekering|zn|¿El *seguro* está incluido?|Is de verzekering inbegrepen?|reizen|
+la comisaría|het politiebureau|zn|¿Dónde está la *comisaría*?|Waar is het politiebureau?|gezondheid|
+robar|stelen|ww|Me han *robado* la cartera.|Mijn portemonnee is gestolen.|gezondheid|
+la cartera|de portemonnee|zn|He perdido la *cartera*.|Ik ben mijn portemonnee kwijt.|dagelijks|
+el bolso|de tas|zn|Mi *bolso* es negro.|Mijn tas is zwart.|dagelijks|
+las gafas|de bril|zn|No encuentro mis *gafas*.|Ik kan mijn bril niet vinden.|dagelijks|gafas de sol = zonnebril · Lat.-Am.: los lentes
+el reloj|het horloge; de klok|zn|Mi *reloj* va adelantado.|Mijn horloge loopt voor.|dagelijks|
+el cargador|de oplader|zn|¿Tienes un *cargador* de móvil?|Heb je een telefoonoplader?|dagelijks|cargar = opladen
+la batería|de batterij, accu|zn|Me queda poca *batería*.|Mijn batterij is bijna leeg.|dagelijks|
+el móvil|de mobiele telefoon|zn|Me he dejado el *móvil* en casa.|Ik heb mijn telefoon thuis laten liggen.|dagelijks|Lat.-Am.: el celular
+la aplicación|de app|zn|Descarga esta *aplicación*.|Download deze app.|dagelijks|informeel: la app
+la red|het netwerk; het net|zn|No hay *red* aquí.|Er is hier geen bereik.|dagelijks|las redes sociales = sociale media
+el correo|de e-mail; de post|zn|Te mando un *correo*.|Ik stuur je een e-mail.|dagelijks|correo electrónico
+la dirección|het adres; de richting|zn|¿Cuál es la *dirección* del hotel?|Wat is het adres van het hotel?|reizen|
+el número|het nummer|zn|¿Cuál es tu *número*?|Wat is je nummer?|dagelijks|
+la cita|de afspraak; het date|zn|Tengo una *cita* con el médico.|Ik heb een afspraak bij de dokter.|dagelijks|
+la fecha|de datum|zn|¿Qué *fecha* es hoy?|Welke datum is het vandaag?|tijd|
+el siglo|de eeuw|zn|Es una iglesia del *siglo* XII.|Het is een kerk uit de 12e eeuw.|tijd|
+la época|de periode, het tijdperk|zn|En esa *época* vivía en Madrid.|In die tijd woonde ik in Madrid.|tijd|
+el verano|de zomer|zn|En *verano* hace mucho calor.|In de zomer is het erg warm.|tijd|
+el invierno|de winter|zn|En *invierno* esquiamos.|In de winter skiën we.|tijd|
+la primavera|de lente|zn|La *primavera* es mi estación favorita.|De lente is mijn favoriete seizoen.|tijd|
+el otoño|de herfst|zn|En *otoño* llueve mucho.|In de herfst regent het veel.|tijd|
+enero|januari|zn|Mi cumpleaños es en *enero*.|Mijn verjaardag is in januari.|tijd|maanden zonder hoofdletter: febrero, marzo, abril …
+agosto|augustus|zn|En *agosto* todo el mundo está de vacaciones.|In augustus is iedereen op vakantie.|tijd|
+la medianoche|middernacht|zn|Volvemos a *medianoche*.|We komen om middernacht terug.|tijd|el mediodía = 12 uur 's middags
+y media|half (klok)|uitdr|Son las tres *y media*.|Het is half vier.|tijd|y cuarto = kwart over · menos cuarto = kwart voor
+en punto|precies (klok)|uitdr|Llegamos a las ocho *en punto*.|We komen om precies acht uur.|tijd|
+a tiempo|op tijd|uitdr|El tren llegó *a tiempo*.|De trein kwam op tijd.|tijd|
+de momento|voorlopig|uitdr|*De momento* todo bien.|Voorlopig alles goed.|tijd|
+enseguida|meteen|bw|*Enseguida* vuelvo.|Ik ben zo terug.|tijd|
+mientras tanto|ondertussen|uitdr|*Mientras tanto*, tomamos un café.|Ondertussen drinken we een koffie.|tijd|
+a menudo|vaak|uitdr|Voy *a menudo* a la playa.|Ik ga vaak naar het strand.|tijd|ook: muchas veces
+de vez en cuando|af en toe|uitdr|*De vez en cuando* como carne.|Af en toe eet ik vlees.|tijd|
+todos los días|elke dag|uitdr|Estudio español *todos los días*.|Ik studeer elke dag Spaans.|tijd|
+anoche|gisteravond|bw|*Anoche* salimos hasta tarde.|Gisteravond gingen we tot laat uit.|tijd|
+anteayer|eergisteren|bw|Llegué *anteayer*.|Ik ben eergisteren aangekomen.|tijd|pasado mañana = overmorgen
+pasado mañana|overmorgen|uitdr|Me voy *pasado mañana*.|Ik vertrek overmorgen.|tijd|
+el almuerzo|de lunch; het tussendoortje|zn|¿A qué hora es el *almuerzo*?|Hoe laat is de lunch?|eten|Spanje: vaak hapje rond 11 uur; Lat.-Am.: lunch
+la merienda|het vieruurtje|zn|Los niños toman la *merienda* a las cinco.|De kinderen eten om vijf uur hun vieruurtje.|eten|
+el aceite|de olie|zn|*Aceite* de oliva, por favor.|Olijfolie, alstublieft.|eten|
+el ajo|de knoflook|zn|Sin *ajo*, por favor.|Zonder knoflook, alstublieft.|eten|
+la cebolla|de ui|zn|¿La tortilla lleva *cebolla*?|Zit er ui in de tortilla?|eten|eeuwige Spaanse discussie
+el tomate|de tomaat|zn|Pan con *tomate*.|Brood met tomaat.|eten|
+la verdura|de groente|zn|Como mucha *verdura*.|Ik eet veel groente.|eten|
+la manzana|de appel|zn|Una *manzana* al día.|Een appel per dag.|eten|ook: huizenblok
+el plátano|de banaan|zn|Me gustan los *plátanos* de Canarias.|Ik hou van bananen van de Canarische Eilanden.|eten|Lat.-Am.: la banana
+la fresa|de aardbei|zn|Helado de *fresa*.|Aardbeienijs.|eten|
+el limón|de citroen|zn|Agua con *limón*.|Water met citroen.|eten|
+el jamón|de ham|zn|El *jamón* ibérico es carísimo.|Iberische ham is heel duur.|eten|
+el marisco|de zeevruchten|zn|Me encanta el *marisco*.|Ik ben dol op zeevruchten.|eten|
+las gambas|de garnalen|zn|Una ración de *gambas* al ajillo.|Een portie knoflookgarnalen.|eten|
+la pasta|de pasta|zn|Hoy cenamos *pasta*.|Vanavond eten we pasta.|eten|
+el helado|het ijsje|zn|¿Nos tomamos un *helado*?|Zullen we een ijsje nemen?|eten|
+el pastel|de taart, het gebak|zn|Un trozo de *pastel* de chocolate.|Een stuk chocoladetaart.|eten|ook: la tarta
+el chocolate|de chocolade|zn|Churros con *chocolate*.|Churros met chocolade.|eten|
+la galleta|het koekje|zn|¿Quieres una *galleta*?|Wil je een koekje?|eten|
+el bocadillo|het (stokbrood)broodje|zn|Un *bocadillo* de jamón, por favor.|Een broodje ham, alstublieft.|eten|Lat.-Am.: el sándwich
+la ración|de portie|zn|Una *ración* de calamares.|Een portie inktvisringen.|eten|media ración = halve portie
+el menú del día|het dagmenu|uitdr|El *menú del día* cuesta doce euros.|Het dagmenu kost twaalf euro.|eten|
+el primer plato|het voorgerecht|uitdr|De *primer plato*, ensalada.|Als voorgerecht salade.|eten|de segundo = als hoofdgerecht
+la propina|de fooi|zn|¿Se deja *propina* aquí?|Geef je hier fooi?|eten|
+el cuchillo|het mes|zn|¿Me trae un *cuchillo*?|Kunt u me een mes brengen?|eten|el tenedor = vork · la cuchara = lepel
+la servilleta|het servet|zn|¿Hay *servilletas*?|Zijn er servetten?|eten|
+la taza|de kop|zn|Una *taza* de té.|Een kop thee.|eten|
+picante|pittig|bn|¿Es muy *picante*?|Is het erg pittig?|eten|
+dulce|zoet|bn|No me gusta el vino *dulce*.|Ik hou niet van zoete wijn.|eten|salado = zout · amargo = bitter
+salado|zout, hartig|bn|La sopa está muy *salada*.|De soep is erg zout.|eten|
+crudo|rauw|bn|El pescado está *crudo*.|De vis is rauw.|eten|
+hecho|gaar; gedaan|bn|La carne, muy *hecha*, por favor.|Het vlees goed doorbakken, alstublieft.|eten|poco hecho = rood/rare
+desayunar|ontbijten|ww|*Desayuno* a las ocho.|Ik ontbijt om acht uur.|eten|
+cenar|avondeten|ww|¿Dónde *cenamos* hoy?|Waar eten we vanavond?|eten|
+almorzar|lunchen|ww|*Almorzamos* juntos mañana.|We lunchen morgen samen.|eten|almuerzo · almuerzas · almuerza · almorzamos · almuerzan
+compartir|delen|ww|¿*Compartimos* una paella?|Zullen we een paella delen?|eten|
+recomendar|aanbevelen|ww|¿Qué nos *recomienda*?|Wat raadt u ons aan?|eten|recomiendo · recomiendas · recomienda · recomendamos · recomiendan
+elegir|kiezen|ww|No sé qué *elegir*.|Ik weet niet wat ik moet kiezen.|basis|elijo · eliges · elige · elegimos · eligen
+decidir|beslissen|ww|Todavía no he *decidido*.|Ik heb nog niet besloten.|basis|
+cambiar de opinión|van mening veranderen|uitdr|He *cambiado de opinión*.|Ik ben van gedachten veranderd.|basis|
+opinar|vinden, een mening hebben|ww|¿Qué *opinas* tú?|Wat vind jij?|basis|en mi opinión = naar mijn mening
+estar de acuerdo|het eens zijn|uitdr|No *estoy de acuerdo*.|Ik ben het er niet mee eens.|basis|
+importar|belangrijk zijn; uitmaken|ww|No *importa*.|Het maakt niet uit.|basis|¿Te importa si …? = Vind je het erg als …?
+molestar|storen|ww|¿Te *molesta* la música?|Stoort de muziek je?|sociaal|
+interesar|interesseren|ww|Me *interesa* la política.|Politiek interesseert me.|basis|werkt als gustar
+faltar|ontbreken|ww|Me *falta* una maleta.|Ik mis een koffer.|basis|werkt als gustar · faltan cinco minutos = nog vijf minuten
+quedar bien|goed staan; goed uitpakken|uitdr|Esa camisa te *queda bien*.|Dat overhemd staat je goed.|dagelijks|
+caer bien|aardig vinden|uitdr|Tu amigo me *cae bien*.|Ik vind je vriend heel aardig.|sociaal|caer mal = niet mogen
+llevarse bien|goed met elkaar overweg kunnen|uitdr|Me *llevo bien* con mi hermana.|Ik kan goed opschieten met mijn zus.|sociaal|
+enamorarse|verliefd worden|ww|*Me enamoré* de Granada.|Ik werd verliefd op Granada.|gevoel|
+casarse|trouwen|ww|*Se casan* en junio.|Ze trouwen in juni.|sociaal|
+nacer|geboren worden|ww|*Nací* en 1998.|Ik ben in 1998 geboren.|sociaal|
+morir|sterven|ww|Su abuelo *murió* el año pasado.|Zijn opa is vorig jaar overleden.|sociaal|muero · mueres · muere · morimos · mueren
+crecer|groeien, opgroeien|ww|*Crecí* en un pueblo pequeño.|Ik ben opgegroeid in een klein dorp.|sociaal|
+mudarse|verhuizen|ww|*Me mudo* a Barcelona.|Ik verhuis naar Barcelona.|dagelijks|
+vivir solo|alleen wonen|uitdr|*Vivo solo* en un piso pequeño.|Ik woon alleen in een klein appartement.|dagelijks|
+limpiar|schoonmaken|ww|Hoy tengo que *limpiar* la casa.|Vandaag moet ik het huis schoonmaken.|dagelijks|
+lavar|wassen|ww|¿Dónde puedo *lavar* la ropa?|Waar kan ik de was doen?|dagelijks|lavarse = zich wassen
+ducharse|douchen|ww|*Me ducho* por la mañana.|Ik douche 's ochtends.|dagelijks|
+vestirse|zich aankleden|ww|*Me visto* rápido.|Ik kleed me snel aan.|dagelijks|me visto · te vistes · se viste
+ponerse|aantrekken; worden|ww|*Ponte* el abrigo, hace frío.|Trek je jas aan, het is koud.|dagelijks|ponerse nervioso = zenuwachtig worden
+quitarse|uittrekken|ww|*Quítate* los zapatos, por favor.|Doe je schoenen uit, alsjeblieft.|dagelijks|
+despertarse|wakker worden|ww|*Me despierto* a las siete.|Ik word om zeven uur wakker.|dagelijks|me despierto · te despiertas · se despierta
+irse|weggaan|ww|*Me voy*, ¡hasta mañana!|Ik ga, tot morgen!|basis|me voy · te vas · se va · nos vamos · se van
+descansar|rusten, uitrusten|ww|Necesito *descansar* un poco.|Ik moet even uitrusten.|dagelijks|
+relajarse|ontspannen|ww|En vacaciones *me relajo*.|Op vakantie ontspan ik.|vrije tijd|
+aburrirse|zich vervelen|ww|*Me aburro* en casa.|Ik verveel me thuis.|gevoel|
+cansarse|moe worden|ww|*Me canso* mucho en verano.|Ik word erg moe in de zomer.|gevoel|
+enfadarse|boos worden|ww|No *te enfades*.|Word niet boos.|gevoel|Lat.-Am.: enojarse
+alegrarse|blij zijn|ww|*Me alegro* mucho por ti.|Ik ben heel blij voor je.|gevoel|me alegro de verte = fijn je te zien
+equivocarse|zich vergissen|ww|Perdón, *me he equivocado*.|Sorry, ik heb me vergist.|basis|
+acordarse|zich herinneren|ww|¿*Te acuerdas* de mí?|Weet je nog wie ik ben?|basis|me acuerdo · te acuerdas · se acuerda
+dar las gracias|bedanken|uitdr|Quiero *dar las gracias* a todos.|Ik wil iedereen bedanken.|sociaal|
+saludar|groeten|ww|*Saluda* a tu madre de mi parte.|Doe je moeder de groeten van me.|sociaal|
+presentar|voorstellen|ww|Te *presento* a mi amiga Laura.|Mag ik je voorstellen aan mijn vriendin Laura.|sociaal|
+besar|kussen|ww|En España nos *besamos* dos veces.|In Spanje geven we twee kussen.|sociaal|el beso = de kus · dos besos
+abrazar|omhelzen|ww|Me *abrazó* muy fuerte.|Ze omhelsde me heel stevig.|sociaal|el abrazo = de knuffel
+charlar|kletsen|ww|Nos quedamos *charlando* hasta tarde.|We bleven tot laat kletsen.|sociaal|
+discutir|ruziën; bespreken|ww|No quiero *discutir* contigo.|Ik wil geen ruzie met je.|sociaal|
+mentir|liegen|ww|No me *mientas*.|Lieg niet tegen me.|sociaal|miento · mientes · miente · mentimos · mienten
+prometer|beloven|ww|Te lo *prometo*.|Ik beloof het je.|sociaal|
+confiar|vertrouwen|ww|*Confío* en ti.|Ik vertrouw op jou.|sociaal|
+gritar|schreeuwen|ww|No *grites*, por favor.|Schreeuw niet, alsjeblieft.|sociaal|
+reír|lachen|ww|Nos *reímos* mucho.|We hebben veel gelachen.|sociaal|río · ríes · ríe · reímos · ríen
+llorar|huilen|ww|No *llores*.|Niet huilen.|gevoel|
+sonreír|glimlachen|ww|Siempre *sonríe*.|Ze glimlacht altijd.|gevoel|
+preocupado|bezorgd|bn|Estoy *preocupado* por el examen.|Ik maak me zorgen over het examen.|gevoel|
+nervioso|zenuwachtig|bn|Estoy un poco *nervioso*.|Ik ben een beetje zenuwachtig.|gevoel|
+enfadado|boos|bn|¿Estás *enfadado* conmigo?|Ben je boos op me?|gevoel|Lat.-Am.: enojado
+sorprendido|verbaasd|bn|Estoy muy *sorprendido*.|Ik ben erg verbaasd.|gevoel|
+aburrido|verveeld; saai|bn|La película es *aburrida*.|De film is saai.|gevoel|estar aburrido = zich vervelen · ser aburrido = saai zijn
+emocionado|ontroerd; enthousiast|bn|Estoy muy *emocionado* con el viaje.|Ik heb heel veel zin in de reis.|gevoel|
+orgulloso|trots|bn|Estoy *orgulloso* de ti.|Ik ben trots op je.|gevoel|
+solo|alleen (eenzaam)|bn|Me siento un poco *solo*.|Ik voel me een beetje alleen.|gevoel|
+ocupado|bezig, druk|bn|Hoy estoy muy *ocupado*.|Vandaag heb ik het heel druk.|gevoel|
+tímido|verlegen|bn|Mi hermano es muy *tímido*.|Mijn broer is erg verlegen.|sociaal|
+gracioso|grappig|bn|¡Qué *gracioso*!|Wat grappig!|sociaal|
+inteligente|intelligent|bn|Es una mujer muy *inteligente*.|Ze is een heel intelligente vrouw.|sociaal|
+trabajador|hardwerkend|bn|Es muy *trabajador*.|Hij is heel hardwerkend.|sociaal|
+perezoso|lui|bn|Los domingos soy muy *perezoso*.|Op zondag ben ik heel lui.|sociaal|
+educado|beleefd, welopgevoed|bn|Los niños son muy *educados*.|De kinderen zijn erg beleefd.|sociaal|let op: niet "opgeleid"
+raro|vreemd, raar|bn|¡Qué *raro*!|Wat vreemd!|basis|
+normal|normaal|bn|Es *normal*.|Dat is normaal.|basis|
+típico|typisch|bn|¿Cuál es un plato *típico* de aquí?|Wat is een typisch gerecht van hier?|eten|
+famoso|beroemd|bn|Es un pintor muy *famoso*.|Het is een heel beroemde schilder.|basis|
+precioso|prachtig|bn|¡Qué vista tan *preciosa*!|Wat een prachtig uitzicht!|basis|
+feo|lelijk|bn|El edificio es bastante *feo*.|Het gebouw is nogal lelijk.|basis|
+limpio|schoon|bn|La habitación está muy *limpia*.|De kamer is heel schoon.|basis|
+sucio|vies|bn|El baño está *sucio*.|De badkamer is vies.|basis|
+cómodo|comfortabel|bn|Estos zapatos son muy *cómodos*.|Deze schoenen zitten heel comfortabel.|basis|
+peligroso|gevaarlijk|bn|¿Es *peligroso* nadar aquí?|Is het gevaarlijk om hier te zwemmen?|basis|
+ruidoso|lawaaierig|bn|La calle es muy *ruidosa*.|De straat is erg lawaaierig.|basis|el ruido = het lawaai
+oscuro|donker|bn|La habitación es muy *oscura*.|De kamer is heel donker.|basis|
+claro|licht (kleur)|bn|Azul *claro*.|Lichtblauw.|kleuren|
+gratis|gratis|bn|La entrada es *gratis* los domingos.|De toegang is gratis op zondag.|reizen|
+necesario|nodig|bn|No es *necesario*.|Dat is niet nodig.|basis|
+útil|nuttig|bn|Esta aplicación es muy *útil*.|Deze app is heel nuttig.|basis|
+lleno de|vol met|uitdr|La calle está *llena de* gente.|De straat is vol met mensen.|basis|
+vacío|leeg|bn|El restaurante está *vacío*.|Het restaurant is leeg.|basis|
+ancho|breed; wijd|bn|Los pantalones me quedan *anchos*.|De broek zit me te wijd.|basis|estrecho = smal, krap
+gordo|dik|bn|El gato está muy *gordo*.|De kat is erg dik.|basis|delgado = slank
+delgado|slank, dun|bn|Es alta y *delgada*.|Ze is lang en slank.|basis|
+rubio|blond|bn|Mi hermana es *rubia*.|Mijn zus is blond.|basis|moreno = donkerharig; gebruind
+moreno|donkerharig; bruin (zon)|bn|Estás muy *moreno*.|Je bent heel bruin.|basis|
+mayor|ouder; volwassen|bn|Mi hermano *mayor* vive en Berlín.|Mijn oudere broer woont in Berlijn.|basis|menor = jonger · las personas mayores = ouderen
+gris|grijs|bn|Hoy el cielo está *gris*.|Vandaag is de lucht grijs.|kleuren|
+marrón|bruin|bn|Unos zapatos *marrones*.|Bruine schoenen.|kleuren|
+rosa|roze|bn|Una camisa *rosa*.|Een roze overhemd.|kleuren|
+naranja|oranje|bn|Holanda juega de *naranja*.|Nederland speelt in het oranje.|kleuren|
+la camisa|het overhemd|zn|Llevo una *camisa* blanca.|Ik draag een wit overhemd.|kleding|
+la camiseta|het T-shirt|zn|Compré una *camiseta* del Real Madrid.|Ik kocht een T-shirt van Real Madrid.|kleding|
+los pantalones|de broek|zn|Necesito unos *pantalones* cortos.|Ik heb een korte broek nodig.|kleding|meestal meervoud
+el vestido|de jurk|zn|¡Qué *vestido* tan bonito!|Wat een mooie jurk!|kleding|
+los zapatos|de schoenen|zn|Me duelen los pies con estos *zapatos*.|Mijn voeten doen pijn van deze schoenen.|kleding|las zapatillas = sportschoenen
+el abrigo|de jas|zn|Llévate un *abrigo*.|Neem een jas mee.|kleding|la chaqueta = jasje, vest
+el bañador|het zwempak, de zwembroek|zn|No olvides el *bañador*.|Vergeet je zwempak niet.|kleding|
+la talla|de maat (kleding)|zn|¿Tiene una *talla* más grande?|Heeft u een grotere maat?|kleding|¿Qué número calza? = schoenmaat
+probarse|passen (kleding)|ww|¿Puedo *probármelo*?|Mag ik het passen?|kleding|el probador = paskamer
+el probador|de paskamer|zn|¿Dónde están los *probadores*?|Waar zijn de paskamers?|kleding|
+las rebajas|de uitverkoop|zn|En enero hay *rebajas*.|In januari is er uitverkoop.|kleding|
+el supermercado|de supermarkt|zn|Voy al *supermercado*.|Ik ga naar de supermarkt.|dagelijks|
+la panadería|de bakkerij|zn|Compro pan en la *panadería*.|Ik koop brood bij de bakker.|dagelijks|
+el banco|de bank (geld; zitbank)|zn|¿Hay un *banco* por aquí?|Is er hier een bank in de buurt?|dagelijks|
+el cajero|de geldautomaat; de caissière|zn|¿Dónde hay un *cajero*?|Waar is een geldautomaat?|reizen|cajero automático
+el efectivo|het contante geld|zn|Solo aceptan *efectivo*.|Ze accepteren alleen contant.|reizen|pagar en efectivo
+el cambio|het wisselgeld; de verandering|zn|Quédese con el *cambio*.|Houd het wisselgeld maar.|reizen|
+la bolsa|de tas (plastic)|zn|¿Necesita una *bolsa*?|Heeft u een tasje nodig?|dagelijks|
+el recibo|de bon, het bonnetje|zn|¿Me da el *recibo*?|Mag ik de bon?|dagelijks|ook: el ticket, la factura (factuur)
+el kilo|de kilo|zn|Un *kilo* de naranjas, por favor.|Een kilo sinaasappels, alstublieft.|dagelijks|medio kilo = een pond
+el trozo|het stuk|zn|Un *trozo* de queso.|Een stuk kaas.|eten|
+la mitad|de helft|zn|Solo la *mitad*, gracias.|Alleen de helft, dank je.|basis|
+el doble|het dubbele|zn|Cuesta el *doble*.|Het kost het dubbele.|basis|
+el resto|de rest|zn|El *resto* del día libre.|De rest van de dag vrij.|basis|
+treinta|dertig|tw|Tengo *treinta* años.|Ik ben dertig.|getallen|31 = treinta y uno
+cuarenta|veertig|tw|Son *cuarenta* euros.|Dat is veertig euro.|getallen|
+cincuenta|vijftig|tw|Hay *cincuenta* personas.|Er zijn vijftig mensen.|getallen|
+once|elf|tw|Llego a las *once*.|Ik kom om elf uur.|getallen|12 doce · 13 trece · 14 catorce · 15 quince
+quince|vijftien|tw|Dentro de *quince* días.|Over twee weken.|getallen|quince días = twee weken
+dieciséis|zestien|tw|Tengo *dieciséis* años.|Ik ben zestien.|getallen|17 diecisiete · 18 dieciocho · 19 diecinueve
+quinientos|vijfhonderd|tw|Cuesta *quinientos* euros.|Het kost vijfhonderd euro.|getallen|200 doscientos · 300 trescientos · 700 setecientos · 900 novecientos
+el millón|het miljoen|zn|Madrid tiene más de tres *millones* de habitantes.|Madrid heeft meer dan drie miljoen inwoners.|getallen|un millón de personas
+segundo|tweede|bn|Es la *segunda* vez que vengo.|Het is de tweede keer dat ik kom.|getallen|tercero (tercer) = derde
+último|laatst|bn|Es el *último* tren.|Het is de laatste trein.|basis|
+la cara|het gezicht|zn|Tiene una *cara* muy simpática.|Hij heeft een heel vriendelijk gezicht.|gezondheid|
+la boca|de mond|zn|Abre la *boca*.|Doe je mond open.|gezondheid|
+el diente|de tand|zn|Me duele un *diente*.|Ik heb kiespijn.|gezondheid|el dentista = tandarts
+la nariz|de neus|zn|Tengo la *nariz* tapada.|Mijn neus zit dicht.|gezondheid|
+la oreja|het oor|zn|Me duele la *oreja*.|Mijn oor doet pijn.|gezondheid|el oído = het gehoor/binnenoor
+el pelo|het haar|zn|Tiene el *pelo* largo.|Ze heeft lang haar.|gezondheid|
+el brazo|de arm|zn|Me duele el *brazo*.|Mijn arm doet pijn.|gezondheid|
+la espalda|de rug|zn|Me duele la *espalda*.|Ik heb rugpijn.|gezondheid|
+el dedo|de vinger; de teen|zn|Me he cortado el *dedo*.|Ik heb in mijn vinger gesneden.|gezondheid|
+el corazón|het hart|zn|Te quiero con todo mi *corazón*.|Ik hou van je met heel mijn hart.|gezondheid|
+la garganta|de keel|zn|Me duele la *garganta*.|Ik heb keelpijn.|gezondheid|
+la fiebre|de koorts|zn|Tengo *fiebre*.|Ik heb koorts.|gezondheid|
+el resfriado|de verkoudheid|zn|Tengo un *resfriado*.|Ik ben verkouden.|gezondheid|estar resfriado
+la tos|de hoest|zn|Tengo *tos*.|Ik moet hoesten.|gezondheid|toser = hoesten
+mareado|duizelig; misselijk|bn|Estoy un poco *mareado*.|Ik ben een beetje duizelig.|gezondheid|
+la pastilla|de pil, tablet|zn|Tómate una *pastilla* para el dolor.|Neem een pijnstiller.|gezondheid|
+la receta|het recept|zn|Necesito una *receta* para este medicamento.|Ik heb een recept nodig voor dit medicijn.|gezondheid|ook kookrecept
+el medicamento|het medicijn|zn|¿Toma algún *medicamento*?|Neemt u medicijnen?|gezondheid|
+la urgencia|de spoed; de eerste hulp|zn|Vamos a *urgencias*.|We gaan naar de eerste hulp.|gezondheid|
+el dolor|de pijn|zn|Tengo un *dolor* muy fuerte.|Ik heb heel erg pijn.|gezondheid|
+herido|gewond|bn|¿Hay alguien *herido*?|Is er iemand gewond?|gezondheid|
+el accidente|het ongeluk|zn|Hubo un *accidente* en la carretera.|Er was een ongeluk op de weg.|gezondheid|
+cuidado|pas op!; de zorg|uitdr|¡*Cuidado*! El suelo está mojado.|Pas op! De vloer is nat.|gezondheid|tener cuidado = voorzichtig zijn
+la lluvia|de regen|zn|Me gusta el sonido de la *lluvia*.|Ik hou van het geluid van de regen.|weer|
+la nieve|de sneeuw|zn|Hay *nieve* en la montaña.|Er ligt sneeuw in de bergen.|weer|nevar = sneeuwen
+el viento|de wind|zn|Hace mucho *viento*.|Het waait hard.|weer|
+la nube|de wolk|zn|No hay ni una *nube*.|Er is geen wolkje te zien.|weer|nublado = bewolkt
+el cielo|de lucht, hemel|zn|El *cielo* está despejado.|De lucht is helder.|weer|
+la tormenta|het onweer, de storm|zn|Esta noche habrá *tormenta*.|Vannacht komt er onweer.|weer|
+el grado|de graad|zn|Estamos a treinta *grados*.|Het is dertig graden.|weer|
+la temperatura|de temperatuur|zn|¿Qué *temperatura* hace?|Wat is de temperatuur?|weer|
+húmedo|vochtig|bn|El clima es muy *húmedo*.|Het klimaat is heel vochtig.|weer|seco = droog
+el clima|het klimaat|zn|Me encanta el *clima* de aquí.|Ik ben dol op het klimaat hier.|weer|mannelijk ondanks -a
+la naturaleza|de natuur|zn|Me encanta la *naturaleza*.|Ik ben dol op de natuur.|natuur|
+el árbol|de boom|zn|Hay un *árbol* enorme en la plaza.|Er staat een enorme boom op het plein.|natuur|
+la flor|de bloem|zn|¡Qué *flores* tan bonitas!|Wat een mooie bloemen!|natuur|
+el campo|het platteland; het veld|zn|Vivimos en el *campo*.|We wonen op het platteland.|natuur|
+el bosque|het bos|zn|Paseamos por el *bosque*.|We wandelen door het bos.|natuur|
+el lago|het meer|zn|Nadamos en el *lago*.|We zwemmen in het meer.|natuur|
+la arena|het zand|zn|La *arena* está muy caliente.|Het zand is heel heet.|natuur|
+la ola|de golf|zn|Hoy hay muchas *olas*.|Vandaag zijn er veel golven.|natuur|
+el animal|het dier|zn|Me encantan los *animales*.|Ik ben dol op dieren.|natuur|
+el gato|de kat|zn|Mi *gato* duerme todo el día.|Mijn kat slaapt de hele dag.|natuur|
+el pájaro|de vogel|zn|Se oyen los *pájaros*.|Je hoort de vogels.|natuur|
+el caballo|het paard|zn|Montamos a *caballo* en la playa.|We rijden paard op het strand.|natuur|
+la tierra|de aarde; het land|zn|La *tierra* aquí es muy seca.|De grond hier is heel droog.|natuur|
+el fuego|het vuur|zn|¿Tienes *fuego*?|Heb je een vuurtje?|natuur|
+la luz|het licht|zn|Apaga la *luz*, por favor.|Doe het licht uit, alsjeblieft.|dagelijks|meervoud: luces
+encender|aanzetten; aansteken|ww|¿Puedes *encender* la luz?|Kun je het licht aandoen?|dagelijks|enciendo · enciendes · enciende · encendemos · encienden
+apagar|uitzetten|ww|*Apaga* el móvil, por favor.|Zet je telefoon uit, alsjeblieft.|dagelijks|
+el edificio|het gebouw|zn|Vivo en ese *edificio*.|Ik woon in dat gebouw.|dagelijks|
+la planta|de verdieping; de plant|zn|Mi habitación está en la tercera *planta*.|Mijn kamer is op de derde verdieping.|dagelijks|planta baja = begane grond
+la escalera|de trap|zn|Subimos por la *escalera*.|We gaan met de trap naar boven.|dagelijks|
+el salón|de woonkamer|zn|Vemos la tele en el *salón*.|We kijken tv in de woonkamer.|dagelijks|
+el dormitorio|de slaapkamer|zn|El piso tiene dos *dormitorios*.|Het appartement heeft twee slaapkamers.|dagelijks|
+la terraza|het terras; het balkon|zn|Tomamos algo en la *terraza*.|We drinken iets op het terras.|dagelijks|
+el jardín|de tuin|zn|La casa tiene un *jardín* pequeño.|Het huis heeft een kleine tuin.|dagelijks|
+la piscina|het zwembad|zn|¿El hotel tiene *piscina*?|Heeft het hotel een zwembad?|reizen|
+la silla|de stoel|zn|¿Está libre esta *silla*?|Is deze stoel vrij?|dagelijks|
+el sofá|de bank (zitbank)|zn|Me quedo dormido en el *sofá*.|Ik val in slaap op de bank.|dagelijks|
+la nevera|de koelkast|zn|Hay cerveza en la *nevera*.|Er staat bier in de koelkast.|dagelijks|ook: el frigorífico
+la basura|het afval|zn|¿Dónde tiro la *basura*?|Waar gooi ik het afval weg?|dagelijks|
+la tele|de tv|zn|No veo mucho la *tele*.|Ik kijk niet veel tv.|dagelijks|la televisión
+el periódico|de krant|zn|Leo el *periódico* en el móvil.|Ik lees de krant op mijn telefoon.|dagelijks|
+la noticia|het nieuws(bericht)|zn|¡Qué buena *noticia*!|Wat een goed nieuws!|dagelijks|las noticias = het journaal
+el papel|het papier; de rol|zn|¿Tienes un *papel* y un boli?|Heb je een papiertje en een pen?|dagelijks|
+el boli|de pen|zn|¿Me dejas un *boli*?|Mag ik je pen even lenen?|dagelijks|el bolígrafo
+la caja|de doos; de kassa|zn|Pague en la *caja*, por favor.|Betaal bij de kassa, alstublieft.|dagelijks|
+el lugar|de plaats, plek|zn|Es un *lugar* precioso.|Het is een prachtige plek.|basis|
+el sitio|de plek|zn|¿Hay *sitio* para uno más?|Is er plek voor nog één?|basis|
+el lado|de kant|zn|Al otro *lado* de la calle.|Aan de overkant van de straat.|basis|
+el final|het einde|zn|Al *final* de la calle.|Aan het eind van de straat.|basis|
+el principio|het begin|zn|Al *principio* no entendía nada.|In het begin begreep ik niets.|basis|
+la manera|de manier|zn|De esta *manera* es más fácil.|Op deze manier is het makkelijker.|basis|ook: la forma, el modo
+la razón|de reden|zn|¿Por qué *razón*?|Om welke reden?|basis|tener razón = gelijk hebben
+la respuesta|het antwoord|zn|No sé la *respuesta*.|Ik weet het antwoord niet.|basis|
+el error|de fout|zn|Es un *error*.|Het is een fout.|basis|
+la ayuda|de hulp|zn|Gracias por tu *ayuda*.|Bedankt voor je hulp.|basis|
+el consejo|het advies|zn|¿Me das un *consejo*?|Geef je me een advies?|basis|
+el plan|het plan|zn|¿Qué *planes* tienes para mañana?|Wat zijn je plannen voor morgen?|basis|
+la oportunidad|de kans|zn|Es una buena *oportunidad*.|Het is een goede kans.|basis|
+la experiencia|de ervaring|zn|Fue una *experiencia* increíble.|Het was een ongelooflijke ervaring.|basis|
+el recuerdo|de herinnering; het souvenir|zn|Compré un *recuerdo* para mi madre.|Ik kocht een souvenir voor mijn moeder.|reizen|
+la cultura|de cultuur|zn|Me interesa la *cultura* española.|De Spaanse cultuur interesseert me.|basis|
+la costumbre|de gewoonte|zn|Es una *costumbre* muy española.|Het is een heel Spaanse gewoonte.|basis|
+la siesta|de siësta, het middagdutje|zn|Después de comer, una *siesta*.|Na het eten een dutje.|dagelijks|echarse la siesta
+la sobremesa|het natafelen|zn|La *sobremesa* puede durar horas.|Het natafelen kan uren duren.|eten|typisch Spaans
+el ambiente|de sfeer|zn|Hay muy buen *ambiente* aquí.|Er hangt hier een heel goede sfeer.|sociaal|
+la mitad de|de helft van|uitdr|*La mitad de* la gente es extranjera.|De helft van de mensen is buitenlands.|basis|
+la sociedad|de samenleving|zn|Es un problema de la *sociedad*.|Het is een probleem van de samenleving.|basis|
+el gobierno|de regering|zn|El *gobierno* ha cambiado la ley.|De regering heeft de wet veranderd.|basis|
+la política|de politiek|zn|No hablo de *política*.|Ik praat niet over politiek.|basis|
+la guerra|de oorlog|zn|Mi abuelo vivió la *guerra*.|Mijn opa heeft de oorlog meegemaakt.|basis|la paz = de vrede
+el medio ambiente|het milieu|uitdr|Hay que cuidar el *medio ambiente*.|We moeten zuinig zijn op het milieu.|basis|
+el negocio|de zaak, het bedrijf|zn|Tiene un *negocio* de ropa.|Hij heeft een kledingzaak.|dagelijks|
+el éxito|het succes|zn|¡Mucho *éxito*!|Veel succes!|basis|let op: la salida = uitgang (exit)
+la carrera|de studie; de carrière; de race|zn|Estudio la *carrera* de medicina.|Ik studeer geneeskunde.|dagelijks|
+el futuro|de toekomst|zn|¿Qué planes tienes para el *futuro*?|Wat zijn je plannen voor de toekomst?|basis|
+el pasado|het verleden|zn|Eso es el *pasado*.|Dat is verleden tijd.|basis|
+ganar dinero|geld verdienen|uitdr|Quiero *ganar dinero* con mi blog.|Ik wil geld verdienen met mijn blog.|dagelijks|
+gastar|uitgeven|ww|*Gasto* mucho en comida.|Ik geef veel uit aan eten.|dagelijks|
+ahorrar|sparen|ww|Estoy *ahorrando* para el viaje.|Ik ben aan het sparen voor de reis.|dagelijks|
+deber dinero|geld schuldig zijn|uitdr|Te *debo* diez euros.|Ik ben je tien euro schuldig.|dagelijks|
+prestar|uitlenen|ww|¿Me *prestas* tu bici?|Leen je me je fiets?|dagelijks|Spanje vaak: dejar
+devolver|teruggeven, terugbrengen|ww|Quiero *devolver* esta camisa.|Ik wil dit overhemd terugbrengen.|dagelijks|devuelvo · devuelves · devuelve · devolvemos · devuelven
+enviar|sturen|ww|Te *envío* la foto.|Ik stuur je de foto.|dagelijks|envío · envías · envía
+recibir|ontvangen|ww|¿Has *recibido* mi mensaje?|Heb je mijn bericht ontvangen?|dagelijks|
+contestar|antwoorden; opnemen (telefoon)|ww|No *contesta*.|Hij neemt niet op.|dagelijks|ook: responder
+descargar|downloaden|ww|Voy a *descargar* el mapa.|Ik ga de kaart downloaden.|dagelijks|
+subir|naar boven gaan; instappen|ww|*Subimos* al autobús.|We stappen in de bus.|reizen|subir una foto = een foto uploaden
+bajar|naar beneden gaan; uitstappen|ww|*Bajo* en la próxima parada.|Ik stap uit bij de volgende halte.|reizen|
+entrar|binnengaan|ww|¿Se puede *entrar*?|Mag je naar binnen?|reizen|entrar en (Spanje) / entrar a (Lat.-Am.)
+cruzar|oversteken|ww|*Cruza* la calle.|Steek de straat over.|reizen|
+girar|afslaan, draaien|ww|*Gire* a la izquierda.|Sla linksaf.|reizen|ook: torcer, doblar (Lat.-Am.)
+parar|stoppen|ww|¿Este autobús *para* en el centro?|Stopt deze bus in het centrum?|reizen|
+aparcar|parkeren|ww|¿Dónde puedo *aparcar*?|Waar kan ik parkeren?|reizen|Lat.-Am.: estacionar
+tardar|lang doen over, duren|ww|¿Cuánto se *tarda* en llegar?|Hoe lang duurt het om er te komen?|reizen|
+durar|duren|ww|¿Cuánto *dura* la película?|Hoe lang duurt de film?|tijd|
+quedar lejos|ver weg liggen|uitdr|El hotel *queda lejos* del centro.|Het hotel ligt ver van het centrum.|reizen|
+perderse|verdwalen|ww|*Me he perdido*. ¿Me ayuda?|Ik ben verdwaald. Kunt u me helpen?|reizen|
+montar|rijden (fiets/paard); opzetten|ww|¿Sabes *montar* en bici?|Kun je fietsen?|vrije tijd|
+viajar en|reizen met (vervoer)|uitdr|Prefiero *viajar en* tren.|Ik reis liever met de trein.|reizen|en tren, en coche, en avión · maar: a pie
+hacer la maleta|de koffer pakken|uitdr|Tengo que *hacer la maleta*.|Ik moet mijn koffer pakken.|reizen|
+ir de compras|gaan winkelen|uitdr|¿Vamos *de compras*?|Gaan we winkelen?|vrije tijd|
+ir de tapas|tapas gaan eten|uitdr|Esta noche vamos *de tapas*.|Vanavond gaan we tapas eten.|eten|
+salir de fiesta|uitgaan, gaan stappen|uitdr|El sábado *salimos de fiesta*.|Zaterdag gaan we stappen.|vrije tijd|
+tomar el sol|zonnen|uitdr|Nos pasamos el día *tomando el sol*.|We hebben de hele dag in de zon gelegen.|vrije tijd|
+hacer deporte|sporten|uitdr|*Hago deporte* cada día.|Ik sport elke dag.|vrije tijd|
+hacer cola|in de rij staan|uitdr|Hay que *hacer cola* para entrar.|Je moet in de rij staan om binnen te komen.|reizen|la cola = de rij
+hacer falta|nodig zijn|uitdr|No *hace falta*.|Dat is niet nodig.|basis|
+hacer una pregunta|een vraag stellen|uitdr|¿Puedo *hacer una pregunta*?|Mag ik een vraag stellen?|basis|
+pedir perdón|sorry zeggen|uitdr|Te *pido perdón*.|Het spijt me echt.|sociaal|
+dar un paseo|een wandeling maken|uitdr|Vamos a *dar un paseo* por la playa.|Laten we een strandwandeling maken.|vrije tijd|
+dar igual|niet uitmaken|uitdr|Me *da igual* la hora.|De tijd maakt me niet uit.|basis|
+dar miedo|bang maken|uitdr|Me *da miedo* volar.|Ik vind vliegen eng.|gevoel|
+dar pena|jammer vinden; zielig vinden|uitdr|Me *da pena* irme.|Ik vind het jammer om te gaan.|gevoel|
+tener lugar|plaatsvinden|uitdr|El festival *tiene lugar* en julio.|Het festival vindt plaats in juli.|basis|
+llevar razón|gelijk hebben|uitdr|*Llevas razón*.|Je hebt gelijk.|sociaal|Spanje, informeel
+poner la mesa|de tafel dekken|uitdr|¿Me ayudas a *poner la mesa*?|Help je me de tafel te dekken?|dagelijks|
+estar a punto de|op het punt staan|uitdr|*Estoy a punto de* salir.|Ik sta op het punt te vertrekken.|tijd|
+estar harto|het zat zijn|uitdr|*Estoy harto* de la lluvia.|Ik ben de regen zat.|gevoel|
+estar de buen humor|goedgehumeurd zijn|uitdr|Hoy *estoy de buen humor*.|Vandaag ben ik goedgehumeurd.|gevoel|de mal humor = slechtgehumeurd
+estar bien|in orde zijn|uitdr|¿*Estás bien*?|Gaat het goed met je?|gevoel|
+¿qué te pasa?|wat is er met je?|uitdr|Estás triste. *¿Qué te pasa?*|Je bent verdrietig. Wat is er?|gevoel|
+¿qué tal estás?|hoe gaat het met je?|uitdr|Hola, Marta, *¿qué tal estás?*|Hoi Marta, hoe gaat het met je?|sociaal|
+¿de dónde eres?|waar kom je vandaan?|uitdr|*¿De dónde eres?*|Waar kom je vandaan?|sociaal|
+¿a qué te dedicas?|wat doe je voor werk?|uitdr|*¿A qué te dedicas?*|Wat doe je voor werk?|sociaal|
+¿cuántos años tienes?|hoe oud ben je?|uitdr|*¿Cuántos años tienes?*|Hoe oud ben je?|sociaal|
+¿qué significa …?|wat betekent …?|uitdr|*¿Qué significa* "madrugar"?|Wat betekent "madrugar"?|basis|
+¿cómo se dice …?|hoe zeg je …?|uitdr|*¿Cómo se dice* "fiets" en español?|Hoe zeg je "fiets" in het Spaans?|basis|
+¿me lo repites?|kun je het herhalen?|uitdr|Perdona, *¿me lo repites?*|Sorry, kun je het herhalen?|basis|
+no entiendo|ik begrijp het niet|uitdr|Lo siento, *no entiendo*.|Sorry, ik begrijp het niet.|basis|
+¿hablas más despacio?|kun je langzamer praten?|uitdr|*¿Hablas más despacio*, por favor?|Kun je langzamer praten, alsjeblieft?|basis|
+¿está incluido?|is het inbegrepen?|uitdr|*¿Está incluido* el desayuno?|Is het ontbijt inbegrepen?|reizen|
+¿se puede …?|mag/kan men …?|uitdr|*¿Se puede* fumar aquí?|Mag je hier roken?|reizen|
+¿tiene …?|heeft u …?|uitdr|*¿Tiene* mesa para cuatro?|Heeft u een tafel voor vier?|reizen|
+¿me cobra?|mag ik afrekenen?|uitdr|Perdone, *¿me cobra?*|Pardon, mag ik afrekenen?|eten|
+para mí|voor mij (bestellen)|uitdr|*Para mí*, una caña.|Voor mij een biertje.|eten|
+lo de siempre|het gebruikelijke|uitdr|*Lo de siempre*, por favor.|Het gebruikelijke, alstublieft.|eten|
+madrugar|vroeg opstaan|ww|Mañana tengo que *madrugar*.|Morgen moet ik vroeg op.|dagelijks|
+trasnochar|laat opblijven|ww|Los españoles suelen *trasnochar*.|Spanjaarden blijven vaak laat op.|dagelijks|
+disfrutar|genieten|ww|¡*Disfruta* del viaje!|Geniet van je reis!|vrije tijd|disfrutar de algo
+celebrar|vieren|ww|Vamos a *celebrarlo*.|Laten we het vieren.|sociaal|
+conseguir|bereiken, lukken, krijgen|ww|¡Lo he *conseguido*!|Het is me gelukt!|basis|consigo · consigues · consigue · conseguimos · consiguen
+lograr|bereiken, slagen|ww|*Logré* hablar con él.|Het is me gelukt met hem te praten.|basis|
+tratar de|proberen; gaan over|uitdr|La película *trata de* una familia.|De film gaat over een familie.|basis|tratar de + infinitief = proberen
+depender|afhangen|ww|*Depende*.|Het hangt ervan af.|basis|depende de ti = het hangt van jou af
+existir|bestaan|ww|Eso no *existe*.|Dat bestaat niet.|basis|
+ocurrir|gebeuren|ww|¿Qué *ocurrió*?|Wat is er gebeurd?|basis|ook: pasar
+suceder|gebeuren|ww|Eso *sucede* a menudo.|Dat gebeurt vaak.|basis|
+mejorar|verbeteren|ww|Mi español *mejora* cada día.|Mijn Spaans wordt elke dag beter.|basis|
+practicar|oefenen|ww|Quiero *practicar* mi español contigo.|Ik wil mijn Spaans met je oefenen.|basis|
+corregir|verbeteren (fouten)|ww|¿Me *corriges* si me equivoco?|Verbeter je me als ik een fout maak?|basis|corrijo · corriges · corrige
+traducir|vertalen|ww|¿Me lo puedes *traducir*?|Kun je het voor me vertalen?|basis|traduzco · traduces · traduce
+mostrar|laten zien|ww|¿Me *muestra* el camino?|Wijst u me de weg?|basis|muestro · muestras · muestra · mostramos · muestran
+llenar|vullen; invullen|ww|*Llene* este formulario.|Vul dit formulier in.|reizen|
+firmar|tekenen (handtekening)|ww|*Firme* aquí, por favor.|Tekent u hier, alstublieft.|reizen|
+cobrar|in rekening brengen; verdienen|ww|¿Cuánto *cobras* por hora?|Hoeveel vraag je per uur?|dagelijks|
+incluir|inbegrijpen|ww|El precio *incluye* el desayuno.|De prijs is inclusief ontbijt.|reizen|
+añadir|toevoegen|ww|¿Le *añado* hielo?|Zal ik er ijs bij doen?|eten|
+el hielo|het ijs (blokjes)|zn|Una Coca-Cola con *hielo*.|Een cola met ijs.|eten|
+mezclar|mengen|ww|No *mezcles* vino y cerveza.|Mix geen wijn en bier.|eten|
+romper|breken|ww|Se me ha *roto* el móvil.|Mijn telefoon is kapot.|dagelijks|roto = kapot
+arreglar|repareren, regelen|ww|¿Puede *arreglar* la ducha?|Kunt u de douche repareren?|dagelijks|
+preparar|voorbereiden, klaarmaken|ww|Voy a *preparar* la cena.|Ik ga het avondeten klaarmaken.|dagelijks|
+tirar|gooien; weggooien|ww|No *tires* papeles al suelo.|Gooi geen papiertjes op de grond.|dagelijks|
+coger el teléfono|de telefoon opnemen|uitdr|No *coge el teléfono*.|Hij neemt de telefoon niet op.|dagelijks|
+caer|vallen|ww|Me he *caído*.|Ik ben gevallen.|basis|caigo · caes · cae · caemos · caen · caerse = vallen
+mover|bewegen; verplaatsen|ww|¿Puedes *mover* el coche?|Kun je de auto verplaatsen?|basis|muevo · mueves · mueve
+tocar|aanraken; spelen (instrument)|ww|*Toco* la guitarra.|Ik speel gitaar.|vrije tijd|te toca = jij bent aan de beurt
+pintar|schilderen|ww|Me gusta *pintar*.|Ik schilder graag.|vrije tijd|
+dibujar|tekenen|ww|*Dibuja* muy bien.|Ze tekent heel goed.|vrije tijd|
+sacar|halen; nemen (foto)|ww|¿Nos *sacas* una foto?|Maak je een foto van ons?|vrije tijd|sacar dinero = geld pinnen
+olvidarse|vergeten|ww|*Se me ha olvidado* tu nombre.|Ik ben je naam vergeten.|basis|se me olvidó = ik vergat het
+fumar|roken|ww|No *fumo*.|Ik rook niet.|dagelijks|
+amar|liefhebben|ww|Te *amo*.|Ik hou van je (diep).|gevoel|te quiero is gebruikelijker
+odiar|haten|ww|*Odio* madrugar.|Ik haat vroeg opstaan.|gevoel|
+soñar|dromen|ww|*Sueño* con vivir en España.|Ik droom ervan in Spanje te wonen.|gevoel|sueño · sueñas · sueña · soñamos · sueñan · soñar con
+el sueño|de droom; de slaap|zn|Es mi *sueño*.|Het is mijn droom.|gevoel|
+la alegría|de vreugde|zn|¡Qué *alegría* verte!|Wat fijn je te zien!|gevoel|
+el miedo|de angst|zn|No tengas *miedo*.|Wees niet bang.|gevoel|
+la sorpresa|de verrassing|zn|¡Qué *sorpresa*!|Wat een verrassing!|gevoel|
+la paciencia|het geduld|zn|Hay que tener *paciencia*.|Je moet geduld hebben.|gevoel|
+mientras que|terwijl (tegenstelling)|vw|Yo trabajo, *mientras que* tú descansas.|Ik werk, terwijl jij uitrust.|basis|
+ni … ni|noch … noch|vw|No bebo *ni* café ni té.|Ik drink geen koffie en ook geen thee.|basis|
+ni siquiera|zelfs niet|uitdr|*Ni siquiera* me saludó.|Hij groette me niet eens.|basis|
+incluso|zelfs|bw|*Incluso* los niños lo saben.|Zelfs de kinderen weten het.|basis|
+sobre todo|vooral|uitdr|Me gusta la fruta, *sobre todo* las fresas.|Ik hou van fruit, vooral aardbeien.|basis|
+tampoco|ook niet|bw|Yo *tampoco*.|Ik ook niet.|basis|
+apenas|nauwelijks|bw|*Apenas* he dormido.|Ik heb nauwelijks geslapen.|basis|
+de verdad|echt, werkelijk|uitdr|Gracias, *de verdad*.|Echt bedankt.|basis|
+exactamente|precies|bw|*Exactamente*.|Precies.|basis|
+seguramente|waarschijnlijk|bw|*Seguramente* llueva mañana.|Waarschijnlijk regent het morgen.|basis|
+probablemente|waarschijnlijk|bw|*Probablemente* vaya en agosto.|Waarschijnlijk ga ik in augustus.|basis|
+realmente|werkelijk, echt|bw|Es *realmente* bonito.|Het is echt mooi.|basis|
+juntos|samen|bn|¿Comemos *juntos*?|Eten we samen?|basis|
+solamente|alleen, slechts|bw|*Solamente* tengo cinco euros.|Ik heb maar vijf euro.|basis|
+fuera|buiten|bw|Comemos *fuera* hoy.|We eten vandaag buiten de deur.|basis|
+arriba|boven|bw|El baño está *arriba*.|De wc is boven.|basis|abajo = beneden
+abajo|beneden|bw|Te espero *abajo*.|Ik wacht beneden op je.|basis|
+enfrente|tegenover|bw|La farmacia está *enfrente*.|De apotheek is aan de overkant.|reizen|enfrente de = tegenover
+alrededor|rondom|bw|Hay muchos bares *alrededor*.|Er zijn veel cafés in de buurt.|reizen|
+todo recto|rechtdoor|uitdr|Siga *todo recto*.|Ga rechtdoor.|reizen|
+según|volgens|vz|*Según* el mapa, está cerca.|Volgens de kaart is het dichtbij.|basis|
+durante|tijdens|vz|*Durante* el verano trabajo en un bar.|Tijdens de zomer werk ik in een bar.|tijd|
+contra|tegen|vz|España juega *contra* Holanda.|Spanje speelt tegen Nederland.|basis|
+excepto|behalve|vz|Abrimos todos los días *excepto* el lunes.|We zijn elke dag open behalve maandag.|basis|ook: menos, salvo
+alguna vez|ooit|uitdr|¿Has estado *alguna vez* en Cuba?|Ben je ooit in Cuba geweest?|tijd|
+cualquier|welk … dan ook|bn|*Cualquier* día me va bien.|Elke dag is goed voor mij.|basis|cualquiera = wie/wat dan ook
+suficiente|genoeg|bn|Tenemos tiempo *suficiente*.|We hebben genoeg tijd.|basis|
 `;

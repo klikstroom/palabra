@@ -80,8 +80,9 @@ function startSession({ extraNew = 0, minutes = store.settings().minutes } = {})
   if (!queue.length) return;
   session = {
     queue, pos: 0, total: queue.length, start: Date.now(), limit: minutes * 60000,
-    stats: { reviews: 0, newWords: 0, correct: 0, rated: 0 }, counted: new Set(),
-    revealed: false, verdict: null,
+    stats: { reviews: 0, newWords: 0, correct: 0, rated: 0, known: 0 }, counted: new Set(),
+    revealed: false, verdict: null, history: [],
+    queuedIds: new Set(news.map((w) => w.id)), replaced: 0, tailStart: null, tailIntros: 0,
   };
   document.body.classList.add('in-session');
   session.timer = setInterval(updateTimer, 1000);
@@ -94,7 +95,7 @@ function endSession() {
   const t = store.today();
   t.seconds += Math.round((Date.now() - session.start) / 1000);
   store.save();
-  const done = session.stats.rated > 0;
+  const done = session.stats.rated + session.stats.known > 0;
   const stats = session.stats;
   const elapsed = Date.now() - session.start;
   session = null;
@@ -115,9 +116,76 @@ function next() {
   showItem();
 }
 
+// ---------- Ongedaan maken ----------
+function snapshot(keys) {
+  const c = cards();
+  const l = store.lang();
+  session.history.push({
+    pos: session.pos, queue: session.queue.slice(), total: session.total,
+    tailStart: session.tailStart, tailIntros: session.tailIntros, replaced: session.replaced,
+    stats: { ...session.stats }, counted: new Set(session.counted), queuedIds: new Set(session.queuedIds),
+    revealed: session.revealed, verdict: session.verdict,
+    cards: keys.map((k) => [k, c[k] ? { ...c[k] } : null]),
+    day: { ...store.today() }, streak: [l.streak, l.lastDay, l.best],
+  });
+  if (session.history.length > 30) session.history.shift();
+}
+
+function undo() {
+  const h = session.history.pop();
+  if (!h) return;
+  const c = cards();
+  const l = store.lang();
+  for (const [k, v] of h.cards) { if (v) c[k] = v; else delete c[k]; }
+  Object.assign(store.today(), h.day);
+  [l.streak, l.lastDay, l.best] = h.streak;
+  const { cards: _c, day: _d, streak: _s, ...rest } = h;
+  Object.assign(session, rest);
+  store.save();
+  showItem();
+}
+
+// ---------- "Ken ik al" ----------
+// Bekend woord: herkenning pas over ~2 weken, actief produceren al vanaf morgen.
+function markKnown(id) {
+  const c = cards();
+  c[id + ':r'] = schedule(newCardState(), 4);
+  if (!c[id + ':p']) c[id + ':p'] = { ...newCardState(), due: startOfDay() + DAY };
+  const t = store.today();
+  t.known = (t.known || 0) + 1;
+}
+
+function knownIntro() {
+  const it = current();
+  snapshot([it.id + ':r', it.id + ':p']);
+  markKnown(it.id);
+  session.stats.known++;
+  const q = session.queue;
+  const i = q.findIndex((x, j) => j > session.pos && x.type === 'learn' && x.key === it.id + ':r');
+  if (i > -1) {
+    q.splice(i, 1);
+    session.total--;
+    if (session.tailStart != null && i < session.tailStart) session.tailStart--;
+  }
+  // Telt niet mee voor je dagelijkse limiet: er komt een volgend nieuw woord voor in de plaats.
+  const w = deck.find((x) => !cards()[x.id + ':r'] && !session.queuedIds.has(x.id));
+  if (w && session.replaced < 60) {
+    session.replaced++;
+    session.queuedIds.add(w.id);
+    if (session.tailStart == null || session.tailIntros >= GROUP) { session.tailStart = q.length; session.tailIntros = 0; }
+    q.splice(session.tailStart + session.tailIntros++, 0, { type: 'intro', id: w.id });
+    q.push({ type: 'learn', key: w.id + ':r' });
+    session.total += 2;
+  }
+  store.markPracticed();
+  store.save();
+  next();
+}
+
 function rate(g) {
   const it = current();
   const c = cards();
+  snapshot([it.key, it.key.slice(0, -2) + ':p']);
   const card = c[it.key] || newCardState();
   const updated = schedule(card, g);
   c[it.key] = updated;
@@ -127,12 +195,14 @@ function rate(g) {
     if (it.type === 'learn') { t.newWords++; session.stats.newWords++; } else { t.reviews++; session.stats.reviews++; }
   }
   session.stats.rated++;
+  t.rated = (t.rated || 0) + 1;
   if (g >= 2) { t.correct++; session.stats.correct++; }
   if (g === 1) {
     // Binnen deze sessie nog eens terug laten komen.
     const at = Math.min(session.queue.length, session.pos + 4);
     session.queue.splice(at, 0, { type: it.type === 'learn' ? 'learn' : 'review', key: it.key, again: true });
     session.total++;
+    if (session.tailStart != null && at <= session.tailStart) session.tailStart++;
   }
   const id = it.key.slice(0, -2);
   // Pas na een geslaagde herhaling op een latere dag ook actief produceren (vanaf morgen).
@@ -164,8 +234,8 @@ function check(answer, w) {
 
 // ---------- Weergave sessie ----------
 function termHtml(term) {
-  const m = term.match(/^(el|la|los|las|il|lo|gli|le|der|die|das|l')\s*(.+)$/i);
-  return m ? `<span class="art">${esc(m[1])}</span> ${esc(m[2])}` : esc(term);
+  const m = term.match(/^(l'|(?:el|la|los|las|il|lo|gli|le|der|die|das)\s)\s*(.+)$/i);
+  return m ? `<span class="art">${esc(m[1].trim())}</span> ${esc(m[2])}` : esc(term);
 }
 
 function updateTimer() {
@@ -176,6 +246,7 @@ function updateTimer() {
 }
 
 function phaseLabel(it) {
+  if (it.listen) return 'Herhalen · luisteren';
   if (it.type === 'review') return it.key.endsWith(':p') ? 'Herhalen · actief' : 'Herhalen';
   if (it.type === 'intro') return 'Nieuw woord';
   return 'Overhoren';
@@ -200,6 +271,11 @@ function showItem() {
   const card = it.key ? (cards()[it.key] || newCardState()) : null;
   let body = '';
   let actions = '';
+  // Bij woorden die al redelijk vastzitten soms alleen de audio laten horen.
+  if (it.listen === undefined) {
+    it.listen = it.type === 'review' && !production && s.listening && !!window.speechSynthesis &&
+      card.s >= 5 && card.reps % 3 === 0;
+  }
 
   if (it.type === 'intro') {
     body = `
@@ -207,7 +283,12 @@ function showItem() {
       <div class="word">${termHtml(w.term)}</div>
       <button class="speak" data-say="${esc(w.term)}" aria-label="Uitspreken">🔊</button>
       ${backSide(w)}`;
-    actions = `<button class="btn" data-act="next">Begrepen</button>`;
+    actions = `<div class="pair"><button class="btn secondary" data-act="known">Ken ik al</button><button class="btn" data-act="next">Begrepen</button></div>`;
+  } else if (it.listen && !session.revealed) {
+    body = `
+      <span class="pos">🎧 luister</span>
+      <button class="speak big" data-say="${esc(w.term)}" aria-label="Nog eens afspelen">🔊</button>
+      <p class="muted small" style="margin-top:18px">Wat hoor je, en wat betekent het?</p>`;
   } else if (!production) {
     body = `
       <span class="pos">${esc(POS[w.pos] || w.pos)}</span>
@@ -248,6 +329,7 @@ function showItem() {
       <div class="s-top">
         <button class="x" data-act="quit" aria-label="Stoppen">✕</button>
         <div class="progress"><div style="width:${pct}%"></div></div>
+        ${session.history.length ? '<button class="x undo" data-act="undo" aria-label="Ongedaan maken">↶</button>' : ''}
         <span class="t"></span>
       </div>
       <div class="phase">${phaseLabel(it)}</div>
@@ -261,7 +343,7 @@ function showItem() {
     setTimeout(() => input.focus(), 50);
     input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); doCheck(); } });
   }
-  if (s.autoplay) {
+  if (s.autoplay || (it.listen && !session.revealed)) {
     const say = it.type === 'intro' || (!production && !session.revealed) ? w.term
       : production && session.revealed ? (w.ex || w.term) : null;
     if (say) speak(say);
@@ -323,6 +405,7 @@ function renderHome() {
       ? `<div class="card tip" style="text-align:center;color:var(--text)">🎉 Klaar voor vandaag! ${nextDueText()}</div>
          ${p.fresh.length ? '<button class="btn secondary" data-act="extra" style="margin-top:12px">Toch 5 extra nieuwe woorden</button>' : ''}`
       : '<button class="btn" data-act="start">Start sessie</button>'}
+    ${introduced < 150 && p.fresh.length ? `<button class="card tip linkcard" data-act="check-open">⚡ <b>Snelcheck</b>: vink de woorden af die je al kent, zodat je sneller bij nieuwe woorden bent. →</button>` : ''}
     <h2>Voortgang</h2>
     <div class="card">
       <div class="row small"><span>Geleerd</span><span><b>${introduced}</b> / ${deck.length}</span></div>
@@ -362,6 +445,7 @@ function renderSummary(st, elapsed) {
       <div class="card stat"><div class="n">${pct}%</div><div class="l">goed</div></div>
       <div class="card stat"><div class="n">${Math.max(1, Math.round(elapsed / 60000))}</div><div class="l">minuten</div></div>
     </div>
+    ${st.known ? `<p class="muted small" style="text-align:center">+ ${st.known} ${st.known === 1 ? 'woord' : 'woorden'} afgevinkt als al bekend</p>` : ''}
     <div class="card tip" style="color:var(--text);margin-bottom:16px">${nextDueText() || 'Alles staat ingepland.'}</div>
     ${left ? `<button class="btn secondary" data-act="more">Nog 5 minuten (${left} klaar)</button>` : ''}
     <button class="btn" data-act="home">Klaar</button>`;
@@ -410,6 +494,150 @@ function showWord(id) {
   speak(w.term);
 }
 
+// ---------- Snelcheck: bekende woorden in één keer afvinken ----------
+const checkSel = new Set();
+const CHECK_BATCH = 24;
+
+function renderCheck() {
+  const batch = deck.filter((w) => !cards()[w.id + ':r']).slice(0, CHECK_BATCH);
+  $app.innerHTML = `
+    <h1>Snelcheck</h1>
+    <p class="muted">Tik op elk woord dat je <b>direct</b> kent. Die komen pas over ~2 weken terug ter controle, en je oefent ze vanaf morgen actief. Twijfel je? Laat dan staan.</p>
+    <div class="checkgrid">${batch.map((w) => `
+      <button class="checkitem${checkSel.has(w.id) ? ' on' : ''}" data-check="${esc(w.id)}">
+        <span class="es">${esc(w.term)}</span><span class="nl">${esc(w.nl)}</span></button>`).join('')}</div>
+    ${batch.length ? `<button class="btn" data-act="check-save" style="margin-top:16px">${checkSel.size ? `${checkSel.size} als bekend opslaan, volgende` : 'Ken ik geen van allen: stoppen'}</button>` :
+      '<p class="muted">Alle woorden zijn al ingedeeld.</p>'}
+    <button class="btn secondary" data-act="home">Terug</button>`;
+}
+
+function toggleCheck(el) {
+  const id = el.dataset.check;
+  if (checkSel.has(id)) checkSel.delete(id); else checkSel.add(id);
+  el.classList.toggle('on');
+  const btn = document.querySelector('[data-act="check-save"]');
+  if (btn) btn.textContent = checkSel.size ? `${checkSel.size} als bekend opslaan, volgende` : 'Ken ik geen van allen: stoppen';
+}
+
+function saveCheck() {
+  if (!checkSel.size) { tab = 'home'; render(); return; }
+  checkSel.forEach(markKnown);
+  checkSel.clear();
+  store.markPracticed();
+  store.save();
+  render();
+}
+
+// ---------- Statistiek ----------
+const WD = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+
+// Eenvoudige staafgrafiek (één reeks) met tik/hover-tooltip.
+function barChart(points, color, unit) {
+  const W = 340, H = 130, top = 14, bottom = 20;
+  const max = Math.max(1, ...points.map((p) => p.v));
+  const bw = W / points.length;
+  const r = 4;
+  const bars = points.map((p, i) => {
+    const h = p.v ? Math.max(3, (H - top - bottom) * p.v / max) : 0;
+    const x = i * bw + 2, w = bw - 4, y = H - bottom - h;
+    const rr = Math.min(r, h, w / 2);
+    const path = h ? `M${x},${H - bottom} V${y + rr} Q${x},${y} ${x + rr},${y} H${x + w - rr} Q${x + w},${y} ${x + w},${y + rr} V${H - bottom} Z` : '';
+    return `<g data-tip="${esc(p.tip)}: ${p.v} ${unit}">
+      <rect x="${i * bw}" y="0" width="${bw}" height="${H}" fill="transparent"/>
+      ${path ? `<path d="${path}" fill="${color}"/>` : ''}
+      ${p.label ? `<text x="${x + w / 2}" y="${H - 5}" text-anchor="middle" class="axis">${p.label}</text>` : ''}
+    </g>`;
+  }).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" class="chart" role="img">
+    <line x1="0" x2="${W}" y1="${H - bottom}" y2="${H - bottom}" class="base"/>${bars}</svg>`;
+}
+
+function showTip(el) {
+  const box = el.closest('.card')?.querySelector('.tipline');
+  if (box) box.textContent = el.dataset.tip;
+}
+
+function renderStats() {
+  const l = store.lang();
+  const c = cards();
+  const now = Date.now();
+  const sod = startOfDay(now);
+  const days = [];
+  for (let i = 13; i >= 0; i--) {
+    const t = sod - i * DAY + 12 * 3600000;
+    const d = l.days[store.dayKey(t)] || {};
+    days.push({ t, d });
+  }
+  const sum = (arr, f) => arr.reduce((a, x) => a + (f(x) || 0), 0);
+  const allDays = Object.values(l.days);
+  const totalMin = Math.round(sum(allDays, (d) => d.seconds) / 60);
+  const week = days.slice(-7).map((x) => x.d);
+  const rated = sum(week, (d) => d.rated);
+  const pct = rated ? Math.round(sum(week, (d) => d.correct) / rated * 100) : null;
+  const counts = { new: 0, learning: 0, known: 0 };
+  deck.forEach((w) => counts[statusOf(w).k]++);
+
+  const activity = days.map(({ t, d }, i) => ({
+    v: (d.reviews || 0) + (d.newWords || 0),
+    label: i % 2 === 1 || i === 13 ? WD[new Date(t).getDay()] : '',
+    tip: i === 13 ? 'Vandaag' : new Date(t).toLocaleDateString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short' }),
+  }));
+  const forecast = [];
+  for (let i = 0; i < 7; i++) {
+    const end = sod + (i + 1) * DAY;
+    const start = i === 0 ? -Infinity : sod + i * DAY;
+    forecast.push({
+      v: Object.keys(c).filter((k) => wordOf(k) && c[k].due >= start && c[k].due < end).length,
+      label: i === 0 ? 'nu' : WD[new Date(sod + i * DAY + 12 * 3600000).getDay()],
+      tip: i === 0 ? 'Vandaag' : i === 1 ? 'Morgen' : new Date(sod + i * DAY + 12 * 3600000).toLocaleDateString('nl-NL', { weekday: 'long' }),
+    });
+  }
+  const hardest = Object.entries(c)
+    .filter(([k, v]) => v.lapses > 0 && wordOf(k))
+    .sort((a, b) => b[1].lapses - a[1].lapses || a[1].s - b[1].s)
+    .slice(0, 6);
+  const fmtTime = totalMin >= 60 ? `${Math.floor(totalMin / 60)}u ${totalMin % 60}m` : `${totalMin}m`;
+  const seg = (n, color, label) => n ? `<div style="flex:${n};background:${color}" data-tip="${label}: ${n}"></div>` : '';
+
+  $app.innerHTML = `
+    <h1>Statistiek</h1>
+    <div class="summary-grid">
+      <div class="card stat"><div class="n">${counts.learning + counts.known}</div><div class="l">woorden geleerd</div></div>
+      <div class="card stat"><div class="n">${counts.known}</div><div class="l">goed gekend (≥ 3 wkn)</div></div>
+      <div class="card stat"><div class="n">${store.streak()}</div><div class="l">dagen op rij · record ${l.best || store.streak()}</div></div>
+      <div class="card stat"><div class="n">${pct == null ? '–' : pct + '%'}</div><div class="l">goed, afgelopen 7 dagen</div></div>
+    </div>
+    <div class="card">
+      <div class="row"><b>Kaarten per dag</b><span class="small muted">14 dagen</span></div>
+      <div class="tipline small muted">Tik op een balk voor details</div>
+      ${barChart(activity, 'var(--easy)', 'kaarten')}
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="row"><b>Komende herhalingen</b><span class="small muted">7 dagen</span></div>
+      <div class="tipline small muted">Tik op een balk voor details</div>
+      ${barChart(forecast, 'var(--accent)', 'herhalingen')}
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="row"><b>Woordenlijst</b><span class="small muted">${deck.length} woorden</span></div>
+      <div class="tipline small muted"></div>
+      <div class="stack">${seg(counts.known, 'var(--good)', 'Gekend')}${seg(counts.learning, 'var(--hard)', 'Lerend')}${seg(counts.new, 'var(--surface-2)', 'Nog niet geleerd')}</div>
+      <div class="legend small">
+        <span><i style="background:var(--good)"></i>Gekend ${counts.known}</span>
+        <span><i style="background:var(--hard)"></i>Lerend ${counts.learning}</span>
+        <span><i style="background:var(--surface-2)"></i>Nieuw ${counts.new}</span>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="row small"><span>Totale studietijd</span><b>${fmtTime}</b></div>
+      <div class="row small" style="margin-top:6px"><span>Herhalingen in totaal</span><b>${sum(allDays, (d) => d.rated)}</b></div>
+      <div class="row small" style="margin-top:6px"><span>Afgevinkt als bekend</span><b>${sum(allDays, (d) => d.known)}</b></div>
+    </div>
+    ${hardest.length ? `<h2>Lastigste woorden</h2><div class="card list">${hardest.map(([k, v]) => {
+      const w = wordOf(k);
+      return `<button class="item" data-word="${esc(w.id)}"><div><div class="es">${esc(w.term)}</div><div class="nl">${esc(w.nl)}${k.endsWith(':p') ? ' · actief' : ''}</div></div><span class="pill learning">${v.lapses}× vergeten</span></button>`;
+    }).join('')}</div>` : ''}`;
+}
+
 function renderSettings() {
   const s = store.settings();
   const opt = (vals, cur, fmt = (v) => v) => vals.map((v) => `<option value="${v}"${v === cur ? ' selected' : ''}>${fmt(v)}</option>`).join('');
@@ -424,6 +652,7 @@ function renderSettings() {
       <div class="set-row"><span>Max. herhalingen per dag</span><select id="maxReviews">${opt([50, 80, 120, 200, 400], s.maxReviews)}</select></div>
       <div class="set-row"><span>Automatisch uitspreken</span><label class="toggle"><input type="checkbox" id="autoplay"${s.autoplay ? ' checked' : ''}><span></span></label></div>
       <div class="set-row"><span>Typen bij actief produceren</span><label class="toggle"><input type="checkbox" id="typing"${s.typing ? ' checked' : ''}><span></span></label></div>
+      <div class="set-row"><span>Luisterkaarten (alleen audio)</span><label class="toggle"><input type="checkbox" id="listening"${s.listening ? ' checked' : ''}><span></span></label></div>
     </div>
     <h2>Dagelijkse herinnering</h2>
     <div class="card set help" style="padding:14px 16px">
@@ -453,7 +682,7 @@ function renderSettings() {
   sel('lang', 'lang', false);
   sel('newPerDay', 'newPerDay');
   sel('maxReviews', 'maxReviews');
-  ['autoplay', 'typing'].forEach((k) => document.getElementById(k).addEventListener('change', (e) => store.setSetting(k, e.target.checked)));
+  ['autoplay', 'typing', 'listening'].forEach((k) => document.getElementById(k).addEventListener('change', (e) => store.setSetting(k, e.target.checked)));
   document.getElementById('import').addEventListener('change', async (e) => {
     const f = e.target.files[0];
     if (!f) return;
@@ -479,6 +708,8 @@ function render() {
   $tabs.querySelectorAll('button').forEach((b) => b.classList.toggle('active', b.dataset.tab === tab));
   if (tab === 'home') renderHome();
   else if (tab === 'words') renderWords();
+  else if (tab === 'stats') renderStats();
+  else if (tab === 'check') renderCheck();
   else renderSettings();
 }
 
@@ -486,8 +717,11 @@ function render() {
 document.addEventListener('click', (e) => {
   const say = e.target.closest('[data-say]');
   if (say) { e.stopPropagation(); speak(say.dataset.say, say.classList.contains('sm') ? 0.85 : 0.9); return; }
-  const t = e.target.closest('[data-tab],[data-act],[data-rate],[data-min],[data-filter],[data-word]');
+  const tip = e.target.closest('[data-tip]');
+  if (tip) { showTip(tip); return; }
+  const t = e.target.closest('[data-tab],[data-act],[data-rate],[data-min],[data-filter],[data-word],[data-check]');
   if (!t) return;
+  if (t.dataset.check) { toggleCheck(t); return; }
   if (t.dataset.tab) { tab = t.dataset.tab; render(); return; }
   if (t.dataset.rate) { rate(Number(t.dataset.rate)); return; }
   if (t.dataset.min) { store.setSetting('minutes', Number(t.dataset.min)); render(); return; }
@@ -498,7 +732,11 @@ document.addEventListener('click', (e) => {
     case 'extra': startSession({ extraNew: 5 }); break;
     case 'more': startSession({ minutes: 5 }); break;
     case 'home': tab = 'home'; render(); break;
-    case 'next': next(); break;
+    case 'next': snapshot([]); next(); break;
+    case 'known': knownIntro(); break;
+    case 'undo': undo(); break;
+    case 'check-open': tab = 'check'; checkSel.clear(); render(); break;
+    case 'check-save': saveCheck(); break;
     case 'reveal': session.revealed = true; showItem(); break;
     case 'check': doCheck(); break;
     case 'quit': endSession(); break;
@@ -518,6 +756,12 @@ document.addEventListener('keydown', (e) => {
     else if (!session.revealed) { session.revealed = true; showItem(); }
     else rate(3);
   } else if (session.revealed && ['1', '2', '3', '4'].includes(e.key)) rate(Number(e.key));
+  else if (e.key === 'u' || e.key === 'Backspace') undo();
+});
+
+document.addEventListener('mouseover', (e) => {
+  const tip = e.target.closest('[data-tip]');
+  if (tip) showTip(tip);
 });
 
 // Terug in de app na een tijdje? Tellers verversen.

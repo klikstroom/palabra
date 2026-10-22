@@ -7,6 +7,7 @@ const DEFAULT_SETTINGS = {
   maxReviews: 120,
   autoplay: true,
   typing: true,
+  listening: true,
   minutes: 10,
 };
 
@@ -47,7 +48,7 @@ export function dayKey(t = Date.now()) {
 export function today() {
   const l = lang();
   const k = dayKey();
-  if (!l.days[k]) l.days[k] = { reviews: 0, newWords: 0, seconds: 0, correct: 0 };
+  if (!l.days[k]) l.days[k] = { reviews: 0, newWords: 0, seconds: 0, correct: 0, rated: 0, known: 0 };
   return l.days[k];
 }
 
@@ -59,6 +60,7 @@ export function markPracticed() {
   const yesterday = dayKey(Date.now() - 86400000);
   l.streak = l.lastDay === yesterday ? l.streak + 1 : 1;
   l.lastDay = k;
+  l.best = Math.max(l.best || 0, l.streak);
 }
 
 export function streak() {

@@ -1,6 +1,6 @@
 // Offline: alle bestanden worden bij installatie opgeslagen. Verhoog VERSION
 // na elke wijziging zodat telefoons de nieuwe versie ophalen.
-const VERSION = 'palabra-v1';
+const VERSION = 'palabra-v2';
 const FILES = [
   './', 'index.html', 'styles.css', 'manifest.webmanifest',
   'js/app.js', 'js/fsrs.js', 'js/store.js', 'js/langs.js', 'data/es.js',
