@@ -1,6 +1,8 @@
 import { schedule, preview, formatInterval, retrievability, newCardState, startOfDay } from './fsrs.js';
 import * as store from './store.js';
 import { LANGS, POS, parseDeck } from './langs.js';
+import * as conj from './conj.js';
+import * as push from './push.js';
 
 const DAY = 86400000;
 const KNOWN_DAYS = 21;        // vanaf deze stabiliteit telt een woord als "gekend"
@@ -405,6 +407,8 @@ function renderHome() {
       ? `<div class="card tip" style="text-align:center;color:var(--text)">🎉 Klaar voor vandaag! ${nextDueText()}</div>
          ${p.fresh.length ? '<button class="btn secondary" data-act="extra" style="margin-top:12px">Toch 5 extra nieuwe woorden</button>' : ''}`
       : '<button class="btn" data-act="start">Start sessie</button>'}
+    ${conj.available() ? (() => { const cp = conj.plan(); const n = Math.min(cp.due.length, 15) + Math.min(cp.fresh.length, 4);
+      return `<button class="card tip linkcard" data-act="conj">🔁 <b>Vervoegen</b> · ${n ? `${n} werkwoorden klaar` : 'alles bijgewerkt'} →</button>`; })() : ''}
     ${introduced < 150 && p.fresh.length ? `<button class="card tip linkcard" data-act="check-open">⚡ <b>Snelcheck</b>: vink de woorden af die je al kent, zodat je sneller bij nieuwe woorden bent. →</button>` : ''}
     <h2>Voortgang</h2>
     <div class="card">
@@ -631,11 +635,72 @@ function renderStats() {
       <div class="row small"><span>Totale studietijd</span><b>${fmtTime}</b></div>
       <div class="row small" style="margin-top:6px"><span>Herhalingen in totaal</span><b>${sum(allDays, (d) => d.rated)}</b></div>
       <div class="row small" style="margin-top:6px"><span>Afgevinkt als bekend</span><b>${sum(allDays, (d) => d.known)}</b></div>
+      <div class="row small" style="margin-top:6px"><span>Vervoegingen geoefend</span><b>${sum(allDays, (d) => d.conj)}</b></div>
     </div>
     ${hardest.length ? `<h2>Lastigste woorden</h2><div class="card list">${hardest.map(([k, v]) => {
       const w = wordOf(k);
       return `<button class="item" data-word="${esc(w.id)}"><div><div class="es">${esc(w.term)}</div><div class="nl">${esc(w.nl)}${k.endsWith(':p') ? ' · actief' : ''}</div></div><span class="pill learning">${v.lapses}× vergeten</span></button>`;
     }).join('')}</div>` : ''}`;
+}
+
+// ---------- Herinnering ----------
+function reminderHtml() {
+  if (!push.configured()) {
+    return `<div class="card set help" style="padding:14px 16px">
+      Zet een vaste herinnering via de Opdrachten-app van je iPhone:
+      <ol>
+        <li>Opdrachten → <b>Automatisering</b> → <b>+</b> → <b>Tijdstip</b> (bijv. 19:00, dagelijks).</li>
+        <li>Kies <b>Voer direct uit</b> en voeg de actie <b>Toon melding</b> toe ("¡Hora de practicar! 🇪🇸").</li>
+      </ol></div>`;
+  }
+  if (!push.supported() || push.needsInstall()) {
+    return `<div class="card set help" style="padding:14px 16px">Pushmeldingen werken op de iPhone alleen als de app op je beginscherm staat (iOS 16.4 of nieuwer). Installeer hem eerst (zie hieronder) en open hem dan via het icoon.</div>`;
+  }
+  const r = store.settings().reminder;
+  const hours = Array.from({ length: 17 }, (_, i) => i + 6);
+  return `<div class="card set">
+      <div class="set-row"><span>Melding als ik nog niet geoefend heb</span><label class="toggle"><input type="checkbox" id="remind"${r ? ' checked' : ''}><span></span></label></div>
+      ${r ? `<div class="set-row"><span>Tijdstip</span><select id="remindHour">${hours.map((h) => `<option value="${h}"${h === r.hour ? ' selected' : ''}>${String(h).padStart(2, '0')}:00</option>`).join('')}</select></div>
+      <div class="set-row"><span class="small muted">Heb je die dag al geoefend? Dan krijg je geen melding.</span><button class="chip" style="flex:0 0 auto;padding:8px 14px" data-act="push-test">Test</button></div>` : ''}
+      <div class="set-row small muted" id="remindMsg" style="display:none"></div>
+    </div>`;
+}
+
+function wireReminder() {
+  const msg = (t) => { const el = document.getElementById('remindMsg'); if (el) { el.textContent = t; el.style.display = ''; } };
+  const toggle = document.getElementById('remind');
+  if (toggle) toggle.addEventListener('change', async () => {
+    toggle.disabled = true;
+    try {
+      if (toggle.checked) await push.enable(19); else await push.disable();
+      renderSettings();
+    } catch (e) { toggle.checked = !toggle.checked; toggle.disabled = false; msg(e.message); }
+  });
+  const hour = document.getElementById('remindHour');
+  if (hour) hour.addEventListener('change', async () => {
+    try { await push.enable(Number(hour.value)); msg(`Herinnering staat op ${hour.value.padStart(2, '0')}:00.`); } catch (e) { msg(e.message); }
+  });
+}
+
+async function testPush() {
+  const el = document.getElementById('remindMsg');
+  const say = (t) => { if (el) { el.textContent = t; el.style.display = ''; } };
+  try { const r = await push.test(); say(r.status < 300 ? 'Testmelding verstuurd. Hij komt binnen een paar seconden binnen.' : `Versturen mislukt (status ${r.status}).`); } catch (e) { say(e.message); }
+}
+
+// Aantallen voor de komende 14 dagen, zodat de melding kan zeggen wat er klaarstaat.
+function forecastData() {
+  const s = store.settings();
+  const sod = startOfDay();
+  const dues = Object.entries(cards()).filter(([k]) => wordOf(k)).map(([, c]) => c.due);
+  const freshLeft = deck.filter((w) => !cards()[w.id + ':r']).length;
+  const out = {};
+  for (let i = 0; i < 14; i++) {
+    const end = sod + (i + 1) * DAY;
+    const n = dues.filter((d) => d < end).length;
+    out[store.dayKey(sod + i * DAY + 12 * 3600000)] = { reviews: Math.min(n, s.maxReviews), newWords: Math.min(s.newPerDay, freshLeft) };
+  }
+  return out;
 }
 
 function renderSettings() {
@@ -655,14 +720,7 @@ function renderSettings() {
       <div class="set-row"><span>Luisterkaarten (alleen audio)</span><label class="toggle"><input type="checkbox" id="listening"${s.listening ? ' checked' : ''}><span></span></label></div>
     </div>
     <h2>Dagelijkse herinnering</h2>
-    <div class="card set help" style="padding:14px 16px">
-      Zet een vaste herinnering via de Opdrachten-app van je iPhone:
-      <ol>
-        <li>Opdrachten → <b>Automatisering</b> → <b>+</b> → <b>Tijdstip</b> (bijv. 19:00, dagelijks).</li>
-        <li>Kies <b>Voer direct uit</b> en voeg de actie <b>Toon melding</b> toe ("¡Hora de practicar! 🇪🇸").</li>
-      </ol>
-      Echte pushmeldingen vanuit de app zelf (met het aantal woorden dat klaarstaat) kunnen later worden toegevoegd.
-    </div>
+    ${reminderHtml()}
     <h2>Installeren</h2>
     <div class="card set help" style="padding:14px 16px">${standalone ? '✅ Je gebruikt de app vanaf je beginscherm.' :
       'Open deze pagina in Safari → tik op <b>Deel</b> (vierkant met pijl) → <b>Zet op beginscherm</b>. Daarna opent hij als een gewone app, ook zonder internet.'}</div>
@@ -682,6 +740,7 @@ function renderSettings() {
   sel('lang', 'lang', false);
   sel('newPerDay', 'newPerDay');
   sel('maxReviews', 'maxReviews');
+  wireReminder();
   ['autoplay', 'typing', 'listening'].forEach((k) => document.getElementById(k).addEventListener('change', (e) => store.setSetting(k, e.target.checked)));
   document.getElementById('import').addEventListener('change', async (e) => {
     const f = e.target.files[0];
@@ -706,10 +765,11 @@ async function exportBackup() {
 function render() {
   window.scrollTo(0, 0);
   $tabs.querySelectorAll('button').forEach((b) => b.classList.toggle('active', b.dataset.tab === tab));
-  if (tab === 'home') renderHome();
+  if (tab === 'home') { renderHome(); push.sync(forecastData()); }
   else if (tab === 'words') renderWords();
   else if (tab === 'stats') renderStats();
   else if (tab === 'check') renderCheck();
+  else if (tab === 'conj') conj.renderStart();
   else renderSettings();
 }
 
@@ -727,6 +787,7 @@ document.addEventListener('click', (e) => {
   if (t.dataset.min) { store.setSetting('minutes', Number(t.dataset.min)); render(); return; }
   if (t.dataset.filter) { wordFilter.status = t.dataset.filter; renderWords(); return; }
   if (t.dataset.word) { showWord(t.dataset.word); return; }
+  if (t.dataset.act && conj.handle(t.dataset.act)) return;
   switch (t.dataset.act) {
     case 'start': startSession(); break;
     case 'extra': startSession({ extraNew: 5 }); break;
@@ -735,12 +796,14 @@ document.addEventListener('click', (e) => {
     case 'next': snapshot([]); next(); break;
     case 'known': knownIntro(); break;
     case 'undo': undo(); break;
+    case 'conj': tab = 'conj'; render(); break;
     case 'check-open': tab = 'check'; checkSel.clear(); render(); break;
     case 'check-save': saveCheck(); break;
     case 'reveal': session.revealed = true; showItem(); break;
     case 'check': doCheck(); break;
     case 'quit': endSession(); break;
     case 'export': exportBackup(); break;
+    case 'push-test': testPush(); break;
     case 'reset':
       if (confirm(`Weet je zeker dat je alle voortgang voor ${L().name} wilt wissen?`)) { store.resetLang(store.settings().lang); render(); }
       break;
@@ -765,17 +828,19 @@ document.addEventListener('mouseover', (e) => {
 });
 
 // Terug in de app na een tijdje? Tellers verversen.
-document.addEventListener('visibilitychange', () => { if (!document.hidden && !session) render(); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden && !session && !conj.active()) render(); });
 
 async function loadDeck() {
   const lang = L();
   deck = lang.load ? parseDeck((await lang.load()).default) : [];
   byId = new Map(deck.map((w) => [w.id, w]));
+  conj.setModule(lang.verbs ? await lang.verbs() : null);
 }
 
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
   navigator.serviceWorker.register('sw.js').catch(() => {});
 }
 
+conj.init({ app: $app, esc, speak, norm, plain, exit: () => { tab = 'home'; render(); } });
 await loadDeck();
 render();

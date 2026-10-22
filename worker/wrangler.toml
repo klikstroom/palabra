@@ -1,0 +1,15 @@
+name = "palabra-push"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["0 * * * *"]
+
+[[kv_namespaces]]
+binding = "SUBS"
+id = "REPLACE_WITH_KV_ID"
+
+[vars]
+VAPID_PUBLIC = "BDTbPA57JyO-4_V13AKEa5vY_V9T6O50ElzGWyPcoMitAPfEC3JbEM5JS9uJgaZ3wjAeXWN-2vO9w0m-2dFB0dY"
+VAPID_SUBJECT = "https://klikstroom.github.io/palabra/"
+# Geheim (niet in git): VAPID_PRIVATE_JWK — zet met `npx wrangler secret put VAPID_PRIVATE_JWK`

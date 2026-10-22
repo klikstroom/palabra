@@ -218,3 +218,17 @@ h2 { font-size: 18px; margin: 28px 0 10px; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; color: var(--muted); }
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
 .tabs button { max-width: 120px; }
+
+/* Vervoegen */
+.dots { display: flex; justify-content: center; gap: 8px; margin-bottom: 12px; }
+.dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--surface-2); }
+.dots i.now { background: var(--text); }
+.dots i.ok { background: var(--good); } .dots i.almost { background: var(--hard); } .dots i.bad { background: var(--again); }
+.answer-shown { font-size: 28px; font-weight: 700; margin-top: 12px; }
+table.conj { width: 100%; border-collapse: collapse; margin-top: 16px; text-align: left; font-size: 16px; }
+table.conj td { padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.conj tr:last-child td { border-bottom: 0; }
+table.conj td:first-child { color: var(--muted); width: 40%; font-size: 14px; }
+table.conj td:last-child { width: 24px; text-align: right; font-weight: 700; }
+table.conj tr.asked { background: var(--surface-2); }
+.okm { color: var(--good); } .almm { color: var(--hard); } .badm { color: var(--again); }

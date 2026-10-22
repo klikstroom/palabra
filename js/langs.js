@@ -1,7 +1,7 @@
 // Talen die de app kent. Een nieuwe taal toevoegen = een databestand in
 // data/ maken met hetzelfde formaat als data/es.js en hier `load` invullen.
 export const LANGS = {
-  es: { name: 'Spaans', flag: '🇪🇸', voice: 'es-ES', load: () => import('../data/es.js') },
+  es: { name: 'Spaans', flag: '🇪🇸', voice: 'es-ES', load: () => import('../data/es.js'), verbs: () => import('../data/es-verbs.js') },
   it: { name: 'Italiaans', flag: '🇮🇹', voice: 'it-IT', load: null },
   de: { name: 'Duits', flag: '🇩🇪', voice: 'de-DE', load: null },
   fr: { name: 'Frans', flag: '🇫🇷', voice: 'fr-FR', load: null },
